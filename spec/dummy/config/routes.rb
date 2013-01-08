@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount GiveyRails::Engine => "/givey-rails"
+  mount GiveyRails::Engine => "/givey_rails"
 end

@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :givey-rails do
+# task :givey_rails do
 #   # Task goes here
 # end
