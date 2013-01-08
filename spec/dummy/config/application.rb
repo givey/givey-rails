@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require
-require "givey-rails"
+require "givey_rails"
 
 module Dummy
   class Application < Rails::Application
