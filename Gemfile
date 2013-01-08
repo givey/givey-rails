@@ -16,3 +16,4 @@ gem "rspec-rails"
 
 # To use debugger
 # gem 'debugger'
+gem 'givey_ruby', git: "git@github.com:giveydev/givey-ruby.git"
