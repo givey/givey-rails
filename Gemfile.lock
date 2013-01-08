@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    givey-rails (0.0.1)
+    givey_rails (0.0.1)
       rails (~> 3.2.10)
 
 GEM
@@ -154,7 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  givey-rails!
+  givey_rails!
   givey_ruby!
   jquery-rails
   rspec-rails
