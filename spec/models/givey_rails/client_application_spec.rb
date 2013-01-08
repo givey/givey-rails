@@ -5,8 +5,8 @@ module GiveyRails
     context "without an id" do
       describe "#persisted?" do
         it "returns false" do
-          following_event = FollowingEvent.new
-          following_event.should_not be_persisted
+          client_application = ClientApplication.new
+          client_application.should_not be_persisted
         end
       end
     end

@@ -4,7 +4,8 @@ module GiveyRails
     include ActiveModel::Conversion
     extend  ActiveModel::Naming
 
-    attr_accessor :client_id,
+    attr_accessor :id,
+      :client_id,
       :name,
       :support_url
 
