@@ -3,6 +3,6 @@ require 'capybara/dsl'
 
 RSpec.configure do |c|
   c.include Capybara, :example_group => {
-    :file_path => /\bspec/integration\//
+    :file_path => /\bspec\/integration\//
   }
 end
