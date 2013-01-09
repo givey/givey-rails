@@ -23,11 +23,13 @@ describe ApplicationController do
     it "should bring back the correct JSON for the find_me method" do
       application_controller.stub(:session).and_return({access_token: api_token})
       OAuth2::AccessToken.should_receive(:new).and_return(api_token)
-      application_controller.access_token.stub_chain(:get, :body).and_return({this: 'that'}.to_json)
-      application_controller.find_me.should == {"me" => 'info'}
+      application_controller.access_token.stub_chain(:get, :body).and_return({givey_tag: 'VOID'}.to_json)
+      application_controller.find_me.givey_tag.should == "VOID"
     end
 
   end
+
+
 
 
 end
