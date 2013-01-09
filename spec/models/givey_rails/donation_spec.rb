@@ -2,13 +2,53 @@ require 'spec_helper'
 
 module GiveyRails
   describe Donation do
-    context "without an id" do
-      describe "#persisted?" do
+    describe "#persisted?" do
+      context "without an id" do
         it "returns false" do
-          following_event = FollowingEvent.new
-          following_event.should_not be_persisted
+          donation = Donation.new
+          donation.should_not be_persisted
         end
       end
+
+      context "with an id" do
+        it "returns true" do
+          donation = Donation.new(id: 589)
+          donation.should be_persisted
+        end
+      end
+    end
+
+    describe "#created_at" do
+      it "is an instance of DateTime" do
+        donation = Donation.new(created_at: "2012-09-19T14:54:13Z")
+        donation.created_at.should be_kind_of DateTime
+      end
+    end
+
+    describe "#donated_at" do
+      it "is an instance of DateTime" do
+        donation = Donation.new(donated_at: "2012-09-19T14:54:13Z")
+        donation.donated_at.should be_kind_of DateTime
+      end
+    end
+
+    describe "#display_amount" do
+      it "returns a Money object with a whole amount" do
+        donation = Donation.new(amount: 100, currency: 'GBP')
+        donation.display_amount.should == 1
+      end
+    end
+
+    describe "#display_currency" do
+      it "returns the relevant currency" do
+        donation = Donation.new(amount: 100, currency: 'GBP')
+        donation.display_currency.should == Money::Currency.new(:gbp)
+      end
+    end
+
+    describe "#build_relationship" do
+      donation = Donation.new(giver_target: { first_name: "Philip"})
+      donation.giver_target.first_name.should == "Philip"
     end
   end
 end
