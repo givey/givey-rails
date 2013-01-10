@@ -12,10 +12,6 @@ module GiveyRails
       @addresses.empty? ? [Address.new(first_name: first_name, last_name: last_name, country: 'GB')] : @addresses
     end
 
-    def addresses=(addresses_attributes)
-      @addresses = addresses_attributes.map{|address_attributes| Address.new(address_attributes["address"]) }
-    end
-
     def following?(user)
       followee_ids.include?(user.id)
     end
