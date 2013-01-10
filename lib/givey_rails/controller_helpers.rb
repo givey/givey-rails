@@ -23,7 +23,7 @@ module GiveyRails
     end
 
     def current_givey_user
-      @current_givey_user ||= User.new(get_token_response("/me"))
+      @current_givey_user ||= GiveyRails::User.new(get_token_response("/me"))
     end
 
     # is this a current_user page?
