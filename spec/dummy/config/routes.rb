@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
-  mount GiveyRails::Engine => "/givey_rails", :as =>"givey_rails"
+  givey_routes
+
+  resource :me, controller: :me, only: [:show]
 
   match "protected" => 'home#protected', as: :protected
+  match "redirected" => 'home#redirected', as: :redirected
   root :to => 'home#index'
 
 end

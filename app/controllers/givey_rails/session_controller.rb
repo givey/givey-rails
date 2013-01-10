@@ -1,6 +1,6 @@
 module GiveyRails
 
-  class SessionsController < ApplicationController
+  class SessionsController < GiveyRails::ApplicationController
 
     respond_to :html
 

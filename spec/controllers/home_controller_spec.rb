@@ -23,5 +23,30 @@ describe HomeController do
 
   end
 
+  describe "is_it_me?" do
+
+    it "returns false if on a non-me page" do
+      get :index
+      controller.is_it_me?.should be_false
+    end
+
+  end
+
+  describe "redirect_to_referrer" do
+
+    it "should redirect to session referrer if set" do
+      controller.stub(:session).and_return({referrer: '/this/that'})
+      get :redirected
+      response.should redirect_to("/this/that")
+    end
+
+    it "should redirect to root_path if referrer set" do
+      controller.stub(:session).and_return({})
+      get :redirected
+      response.should redirect_to("/")
+    end
+
+  end
+
 
 end

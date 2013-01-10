@@ -6,6 +6,10 @@ class HomeController < ApplicationController
     render text: 'HOME'
   end
 
+  def redirected
+    redirect_to_referrer
+  end
+
   def protected
     render text: 'PROTECTED'
   end
