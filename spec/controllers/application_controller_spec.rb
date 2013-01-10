@@ -18,13 +18,13 @@ describe ApplicationController do
 
   end
 
-  describe "current_user" do
+  describe "current_givey_user" do
 
-    it "should bring back the correct JSON for the current_user method" do
+    it "should bring back the correct JSON for the current_givey_user method" do
       application_controller.stub(:session).and_return({access_token: api_token})
       OAuth2::AccessToken.should_receive(:new).and_return(api_token)
       application_controller.access_token.stub_chain(:get, :body).and_return({givey_tag: 'VOID'}.to_json)
-      application_controller.current_user.givey_tag.should == "VOID"
+      application_controller.current_givey_user.givey_tag.should == "VOID"
     end
 
   end

@@ -22,8 +22,8 @@ module GiveyRails
       redirect_to new_session_path and return unless signed_in?
     end
 
-    def current_user
-      @current_user ||= User.new(get_token_response("/me"))
+    def current_givey_user
+      @current_givey_user ||= User.new(get_token_response("/me"))
     end
 
     # is this a current_user page?
@@ -40,7 +40,7 @@ module GiveyRails
     def givey_user
       @givey_user ||= begin
         if is_it_me?
-          current_user
+          current_givey_user
         elsif params[:user_id]
           User.new(get_token_response("/users/#{params[:user_id]}"))
         else
