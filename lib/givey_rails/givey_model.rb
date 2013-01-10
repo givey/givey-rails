@@ -34,6 +34,7 @@ module GiveyRails
 
     def build_relationships(name, value)
       return nil if value.empty?
+      return value unless value.first.kind_of?(Hash)
       klass_name = [:supporters, :donors, :followees, :followers].include?(name.to_sym) ? "users" : name
       klass_name = "GiveyRails::" + klass_name.singularize.classify
       value.map {|attrs| klass_name.constantize.new(attrs[name.singularize]) }
