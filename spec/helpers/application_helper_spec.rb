@@ -1,4 +1,5 @@
 require 'spec_helper'
 
-describe GiveyRails::ApplicationHelper do
+describe ApplicationHelper do
+
 end
