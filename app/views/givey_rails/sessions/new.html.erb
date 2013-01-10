@@ -1,1 +1,10 @@
-NEW SESSION!
+<div id="sign-in">
+  <h6>Sign In with your Givey account</h6>
+  <%= simple_form_for @user, as: :me, url: session_path do |f| %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :remember_me, as: :boolean %>
+    <%= f.button :submit, 'Sign In', class:'button' %>
+  <%- end -%>
+  <a href="/password/new/" class="password">Forgotten Password?</a>
+</div>

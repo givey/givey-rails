@@ -9,13 +9,6 @@ module GiveyRails
       @me = User.new
     end
 
-=begin
-    # GET /sign_in/facebook
-    def new_facebook
-      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRailsSdk.configuration.api_version}/authorize/facebook?provider_redirect_url=http://#{request.host}/callback_facebook&access_token=#{access_token.token}"
-      redirect_to url
-    end
-
     # POST /sign_in
     def create
       if set_password_token(params[:me][:email], params[:me][:password])
@@ -23,7 +16,14 @@ module GiveyRails
       else
         #render json: ["0"].to_json and return if modal?
       end
-      redirect_to_or_back
+      redirect_to_referrer
+    end
+
+=begin
+    # GET /sign_in/facebook
+    def new_facebook
+      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRailsSdk.configuration.api_version}/authorize/facebook?provider_redirect_url=http://#{request.host}/callback_facebook&access_token=#{access_token.token}"
+      redirect_to url
     end
 
     # GET /callback/facebook
