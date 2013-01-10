@@ -38,13 +38,13 @@ module GiveyRails
       end
 
     end
+=end
 
     # DELETE / GET /sign_out
     def destroy
       token_sign_out
       redirect_to root_path
     end
-=end
 
   end
 

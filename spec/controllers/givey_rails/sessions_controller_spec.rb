@@ -31,4 +31,20 @@ describe GiveyRails::SessionsController do
 
   end
 
+
+  describe "GET / DELETE /sign_out" do
+
+    it "should successfully logout a user" do
+      session[:user_id]       = '1234'
+      session[:access_token]  = '0987'
+      controller.access_token.stub(:get).with("/v1/oauth/revoke")
+      get :destroy
+      response.should redirect_to(root_path)
+      session[:user_id].should be_nil
+    end
+
+  end
+
+
+
 end
