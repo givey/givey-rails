@@ -7,11 +7,11 @@ require "givey_rails/version"
 Gem::Specification.new do |s|
   s.name        = "givey_rails"
   s.version     = GiveyRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GiveyRails."
-  s.description = "TODO: Description of GiveyRails."
+  s.authors     = ["Nick Reavill", "Philip Poots"]
+  s.email       = ["nick@givey.com", "philip@givey.com"]
+  s.homepage    = "http://www.givey.com"
+  s.summary     = "Summary of GiveyRails."
+  s.description = "Description of GiveyRails."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
