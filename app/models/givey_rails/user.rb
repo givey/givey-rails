@@ -1,66 +1,7 @@
 module GiveyRails
   class User
-    include ActiveModel::Validations
-    include ActiveModel::Conversion
-    extend  ActiveModel::Naming
-
-    attr_accessor :id,
-      :givey_tag,
-      :email,
-      :password,
-      :remember_me,
-      :short_name,
-      :first_name,
-      :last_name,
-      :avatar,
-      :avatar_url,
-      :avatar_thumb_url,
-      :total_privacy,
-      :amount_privacy,
-      :twitter_linked,
-      :twitter_nickname,
-      :sms_phone_number,
-      :facebook_linked,
-      :ppx_status,
-      :givey_score,
-      :money_total,
-      :voice_total,
-      :time_total,
-      :stuff_total,
-      :currency,
-      :biography,
-      :interests,
-      :location,
-      :sex,
-      :occupation,
-      :website_url,
-      :follower_count,
-      :followee_count,
-      :reset_password_token,
-      :giftaid,
-      :followee_ids,
-      :liked_charity_ids,
-      :managed_charity_ids,
-      :created_at,
-      :time_donation_allowed,
-      :stuff_donation_allowed,
-      :node_type
-
+    include GiveyModel
     #validates_presence_of :email, :password
-
-    def initialize(attributes = {})
-      attributes.delete_if{ |k,_| k == "error" }.each do |name, value|
-        send("#{name}=", value)
-      end
-    end
-
-    def persisted?
-      !(self.id.nil?)
-    end
-
-    def created_at
-      DateTime.parse(@created_at)
-    end
 
     # RELATIONSHIPS
     def selected_charity
