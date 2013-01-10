@@ -36,7 +36,7 @@ module GiveyRails
       return nil if value.empty?
       return value unless value.first.kind_of?(Hash)
       klass_name = [:supporters, :donors, :followees, :followers].include?(name.to_sym) ? "users" : name
-      klass_name = "GiveyRails::" + klass_name.singularize.classify
+      klass_name = "GiveyRails::" + klass_name.classify
       value.map {|attrs| klass_name.constantize.new(attrs[name.singularize]) }
     end
   end
