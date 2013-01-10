@@ -27,6 +27,7 @@ module GiveyRails
     def build_relationship(name, attributes)
       return nil if attributes.empty?
       name = "user" if [:giver_target, :select_user].include?(name)
+      name = "charity" if [:selected_charity].include?(name)
       name = "GiveyRails::" + name.classify
       name.constantize.new(attributes)
     end

@@ -4,14 +4,6 @@ module GiveyRails
     #validates_presence_of :email, :password
 
     # RELATIONSHIPS
-    def selected_charity
-      @selected_charity
-    end
-
-    def selected_charity=(charity_attributes)
-      @selected_charity = charity_attributes ? Charity.new(charity_attributes) : nil
-    end
-
     def like_this_charity?(charity)
       liked_charity_ids.include?(charity.id)
     end
@@ -24,24 +16,8 @@ module GiveyRails
       @addresses = addresses_attributes.map{|address_attributes| Address.new(address_attributes["address"]) }
     end
 
-    def followees
-      @followees
-    end
-
-    def followees=(users_attributes)
-      @followees = users_attributes.map{|user_attributes| User.new(user_attributes["followee"]) }
-    end
-
     def following?(user)
       followee_ids.include?(user.id)
-    end
-
-    def followers
-      @followers
-    end
-
-    def followers=(users_attributes)
-      @followers = users_attributes.map{|user_attributes| User.new(user_attributes["follower"]) }
     end
 
     def full_name
