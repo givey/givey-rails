@@ -1,0 +1,49 @@
+{
+  "id": "4fe8514bf012085e360001ce",
+  "name": "Amnesty International UK Section Charitable Trust",
+  "givey_tag": "AMNESTYINT",
+  "info_description": "We are ordinary people from across the world standing up for humanity and human rights. Our purpose it to protect individuals wherever justice, fairness, freedom and truth are denied.",
+  "avatar_url": "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/default.png",
+  "time_donation_accepted": false,
+  "stuff_donation_accepted": false,
+  "avatar_thumb_url": "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "has_channels": false,
+  "has_admin_user": false,
+  "donor_count": 3,
+  "supporter_count": 0,
+  "node_type": "charity",
+  "channels": [],
+  "donors": [
+    {
+      "donor": {
+        "id": "500959edf0120829c500014f",
+        "first_name": "Ashutosh",
+        "last_name": "Arya",
+        "short_name": "Ashutosh",
+        "givey_tag": "ASH",
+        "avatar_thumb_url": "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png"
+      }
+    },
+    {
+      "donor": {
+        "id": "500a7ca6f012087020000001",
+        "first_name": "Nick",
+        "last_name": "Reavill",
+        "short_name": "Nick",
+        "givey_tag": "NREAVILL",
+        "avatar_thumb_url": "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/v1344520707/01._Spring_-_Monkey_God.jpg"
+      }
+    },
+    {
+      "donor": {
+        "id": "5075442ef01208c73e000001",
+        "first_name": "fname 1704153589",
+        "last_name": "lastName 1704153589",
+        "short_name": "fname 1704153589",
+        "givey_tag": "EHABELGINDY",
+        "avatar_thumb_url": "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/v1351258054/ipbi22aqcudsagv0w4tq.jpg"
+      }
+    }
+  ],
+  "supporters": []
+}
