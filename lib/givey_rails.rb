@@ -1,4 +1,5 @@
 require "eu_central_bank"
+require "simple_form"
 require "givey_ruby"
 require "givey_rails/engine"
 require "givey_rails/routes"
