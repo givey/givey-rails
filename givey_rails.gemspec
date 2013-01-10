@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.11"
   s.add_dependency "givey_ruby"
   s.add_dependency "eu_central_bank"
-  s.add_dependency "simple_form"
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"
