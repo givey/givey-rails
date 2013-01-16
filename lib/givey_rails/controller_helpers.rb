@@ -7,7 +7,7 @@ module GiveyRails
     include GiveyRuby::Controller
 
     included do
-      helper_method :signed_in?, :current_user, :is_it_me?
+      helper_method :signed_in?, :current_givey_user, :is_it_me?
     end
 
     module ClassMethods

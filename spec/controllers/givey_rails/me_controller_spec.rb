@@ -32,5 +32,26 @@ describe GiveyRails::MeController do
 
   end
 
+  describe "GET /me/paypal_link" do
+
+    it "should do the correct redirect" do
+      controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      get :paypal_link
+      response.status.should == 302
+      response.header["Location"].should match(/paypal\/request_preapproval\?provider_redirect_url/)
+    end
+
+  end
+
+  describe "GET /me/paypal_link_callback" do
+
+    it "should redirect correctly" do
+      get :paypal_link_callback
+      response.should redirect_to(root_path)
+      flash[:notice].should eq("PayPal account linked")
+    end
+
+  end
+
 
 end

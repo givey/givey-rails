@@ -19,10 +19,9 @@ module GiveyRails
       redirect_to_referrer
     end
 
-=begin
     # GET /sign_in/facebook
     def new_facebook
-      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRailsSdk.configuration.api_version}/authorize/facebook?provider_redirect_url=http://#{request.host}/callback_facebook&access_token=#{access_token.token}"
+      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRuby.configuration.api_version}/authorize/facebook?provider_redirect_url=http://#{request.host}/callback_facebook&access_token=#{access_token.token}"
       redirect_to url
     end
 
@@ -31,14 +30,13 @@ module GiveyRails
       unless params[:access_token].blank?
         # TODO: login fails
         login_token_user(params[:access_token])
-        redirect_to_or_back
+        redirect_to_referrer
       else
         flash[:notice]  = "your login was unsuccessful"
         render action: :new
       end
 
     end
-=end
 
     # DELETE / GET /sign_out
     def destroy

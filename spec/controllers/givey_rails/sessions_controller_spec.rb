@@ -31,6 +31,34 @@ describe GiveyRails::SessionsController do
 
   end
 
+  describe "GET /sign_in/facebook" do
+
+    it "should do the correct redirect" do
+      controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      get :new_facebook
+      response.status.should == 302
+      response.header["Location"].should match(/authorize\/facebook\?provider_redirect_url/)
+    end
+
+  end
+
+  describe "GET /callback/facebook" do
+
+    it "should log me in" do
+      controller.stub(:params).and_return(access_token: '123sdf654')
+      controller.should_receive(:login_token_user).with('123sdf654')
+      get :create_facebook
+      response.should redirect_to(root_path)
+    end
+
+    it "should not log me in" do
+      controller.stub(:params).and_return(access_token: nil)
+      controller.should_receive(:login_token_user).never
+      get :create_facebook
+      response.should render_template(:new)
+    end
+
+  end
 
   describe "GET / DELETE /sign_out" do
 

@@ -22,19 +22,19 @@ module GiveyRails
         render action: "new"
       end
     end
-=begin
+
     # GET /me/paypal_link
     def paypal_link
-      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRailsSdk.configuration.api_version}/paypal/request_preapproval?provider_redirect_url=http://#{request.host}/me/paypal_link_callback&access_token=#{access_token.token}"
+      url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRuby.configuration.api_version}/paypal/request_preapproval?provider_redirect_url=http://#{request.host}/me/paypal_link_callback&access_token=#{access_token.token}"
       redirect_to url
     end
 
     # GET /me/paypal_link_callback
     def paypal_link_callback
       flash[:notice] = 'PayPal account linked'
-      redirect_to_or_back
+      redirect_to_referrer
     end
-=end
+
   end
 
 end
