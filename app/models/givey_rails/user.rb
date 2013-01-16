@@ -1,9 +1,6 @@
 module GiveyRails
   class User
     include GiveyModel
-
-    attr_accessor :email, :password, :remember_me
-
     #validates_presence_of :email, :password
     # RELATIONSHIPS
     def like_this_charity?(charity)
