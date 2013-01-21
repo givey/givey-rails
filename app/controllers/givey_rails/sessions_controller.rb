@@ -6,7 +6,7 @@ module GiveyRails
 
     # GET /sign_in
     def new
-      @me = User.new
+      #@user = GiveyRails::User.new
     end
 
     # POST /sign_in
@@ -47,3 +47,4 @@ module GiveyRails
   end
 
 end
+
