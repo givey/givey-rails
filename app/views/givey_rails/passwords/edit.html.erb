@@ -1,0 +1,11 @@
+<section class="clearfix center">
+  <h3>Change Your Password </h3>
+  <%= form_for @user, as: :user, url: password_path, method: :put do |f| %>
+    <%= f.hidden_field :reset_password_token, as: :hidden %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.label 'Confirm Password' %>
+    <%= f.password_field :password_confirmation %>
+    <%= f.button :submit, 'Change Password', class:'buttonsmall margin20 first' %>
+  <% end %>
+</section>

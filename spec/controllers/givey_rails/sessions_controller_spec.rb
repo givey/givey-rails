@@ -2,15 +2,6 @@ require 'spec_helper'
 
 describe GiveyRails::SessionsController do
 
-  describe "GET /sign_in" do
-
-    it "should assign a me object" do
-      get :new
-      assigns[:me].should be_kind_of(GiveyRails::User)
-    end
-
-  end
-
   describe "POST /sign_in" do
 
     it "should successfully login a user" do
