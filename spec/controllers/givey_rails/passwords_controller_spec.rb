@@ -7,7 +7,6 @@ describe GiveyRails::PasswordsController do
     it "should assign a user object" do
       session[:access_token] = '1234'
       get :new
-      assigns[:user].should be_kind_of(GiveyRails::User)
       session[:access_token].should be_nil
     end
 

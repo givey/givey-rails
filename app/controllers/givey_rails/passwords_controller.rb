@@ -5,7 +5,7 @@ module GiveyRails
     def new
       # clear the access token
       session[:access_token] = nil
-      @user                  = GiveyRails::User.new
+      #@user                  = GiveyRails::User.new
     end
 
     def create

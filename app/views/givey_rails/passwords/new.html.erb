@@ -4,6 +4,6 @@
   <%= form_for @user, as: :user, url: password_path do |f| %>
     <%= f.label :email %>
     <%= f.email_field :email %>
-    <%= f.button :submit, 'Reset Password', class:'' %>
+    <%= f.submit 'Reset Password', class: 'button' %>
   <% end %>
 </section>
