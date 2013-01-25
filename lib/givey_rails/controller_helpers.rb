@@ -49,7 +49,7 @@ module GiveyRails
       end
     end
 
-    def set_referrer(redirect_url = request.referer)
+    def set_referrer(redirect_url)
       session[:referrer]  = redirect_url
     end
 
