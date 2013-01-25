@@ -20,6 +20,7 @@ module GiveyRails
 
     # GET /sign_in/facebook
     def new_facebook
+      set_referrer(redirect_url)
       url = "#{ENV['GIVEY_API_HOST']}/#{GiveyRuby.configuration.api_version}/authorize/facebook?provider_redirect_url=http://#{request.host}/callback_facebook&access_token=#{access_token.token}"
       redirect_to url
     end
