@@ -1,1 +1,22 @@
-new.html.erb
+<section class="clearfix center">
+  <div id="sign-in">
+    <h3>Sign Up with your Givey account</h3>
+    <%- unless @me.errors.full_messages.empty? %>
+    	We could not create your account:<br/>
+    	<%- @me.errors.full_messages.each do |error| -%>
+    		<%= error %><br/>
+    	<%- end %>
+    <%- end %>
+    <%= form_for @me, as: :me, url: me_path do |f| %>
+      <%= f.label :givey_tag %>
+      <%= f.text_field :givey_tag %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
+      <%= f.submit 'Sign Up', class: 'button' %>
+    <%- end -%>
+  </div>
+</section>
