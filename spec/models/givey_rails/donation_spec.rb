@@ -53,7 +53,7 @@ module GiveyRails
 
     describe "#donation_string_html" do
       it "should render the correct string" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-USD1000-amt to ["(charity).MD Charity":http://givey.com/MDC]') 
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-usd1000-amt to ["(charity).MD Charity":http://givey.com/MDC]') 
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated $10 to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
       end
     end

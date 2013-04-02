@@ -13,10 +13,10 @@ module GiveyRails
     end
 
     def donation_string_html
-      str_cur, str_amt  = donation_string_textile.match(/amt-([A-Z]{3})(\d+)-amt/).captures
+      str_cur, str_amt  = donation_string_textile.match(/amt-([a-z]{3}|[A-Z]{3})(\d+)-amt/).captures
       money_object      = Money.new(str_amt, str_cur)
 
-      replaced_str      = donation_string_textile.gsub(/amt-[A-Z]{3}/, money_object.currency.symbol).gsub(/\d+-amt/, (money_object.cents / 100).to_s)
+      replaced_str      = donation_string_textile.gsub(/amt-([a-z]{3}|[A-Z]{3})/, money_object.currency.symbol).gsub(/\d+-amt/, (money_object.cents / 100).to_s)
       RedCloth.new(replaced_str, [:lite_mode]).to_html
     end
 
