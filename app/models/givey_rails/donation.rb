@@ -17,11 +17,26 @@ module GiveyRails
     end
 
     def donation_string_html
-      str_cur, str_amt  = donation_string_textile.match(/amt-([a-z]{3}|[A-Z]{3})(\d+)-amt/).captures
-      money_object      = Money.new(str_amt, str_cur)
-
-      replaced_str      = donation_string_textile.gsub(/amt-([a-z]{3}|[A-Z]{3})/, money_object.currency.symbol).gsub(/\d+-amt/, (money_object.cents / 100).to_s)
+      if donation_string_textile =~ /time-\d+-time/
+        str_amt       = donation_string_textile.match(/time-(\d+)-time/).captures[0].to_i
+        time_str      = time_donation_format(str_amt)
+        replaced_str  = donation_string_textile.gsub(/time-\d+-time/, time_str)
+      else
+        str_cur, str_amt  = donation_string_textile.match(/amt-([a-z]{3}|[A-Z]{3})(\d+)-amt/).captures
+        money_object      = Money.new(str_amt, str_cur)
+        replaced_str      = donation_string_textile.gsub(/amt-([a-z]{3}|[A-Z]{3})/, money_object.currency.symbol).gsub(/\d+-amt/, (money_object.cents / 100).to_s)
+      end
       RedCloth.new(replaced_str, [:lite_mode]).to_html
+    end
+
+    def donation_images_html
+      RedCloth.new(donation_images_textile.join, [:lite_mode]).to_html  
+    end
+
+    def time_donation_format(seconds)
+      mm, ss = seconds.divmod(60)
+      hh, mm = mm.divmod(60)
+      "%d hours and %d minutes" % [hh, mm]
     end
 
   end
