@@ -4,6 +4,10 @@ module GiveyRails
 
     validates_presence_of :amount
 
+    def donated_entity
+      channel || charity
+    end
+
     def display_amount
       Money.new(amount, currency).cents / 100
     end
