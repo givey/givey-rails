@@ -35,5 +35,24 @@ module GiveyRails
         end
       end
     end
+
+    describe "default currency" do
+
+      it "has a default currency of GBP" do
+        charity = Charity.new
+        charity.currency.should == 'GBP'
+      end
+
+    end
+
+    describe "charity_donations_total_display" do
+
+      it "returns the correct amount" do
+        charity = Charity.new(charity_donations_total: 1400)
+        charity.charity_donations_total_display.should == 14
+      end
+
+    end
+
   end
 end
