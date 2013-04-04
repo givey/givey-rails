@@ -51,6 +51,33 @@ describe GiveyRails::SessionsController do
 
   end
 
+  describe "GET /sign_in/twitter" do
+    it "redirects correctly" do
+      controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      get :new_twitter
+      response.status.should == 302
+      response.header["Location"].should match(/authorize\/twitter\?provider_redirect_url/)
+    end
+  end
+
+  describe "GET /callback/twitter" do
+    it "logs me in" do
+      controller.stub(:params).and_return(access_token: '123sdf654')
+      controller.should_receive(:login_token_user).with('123sdf654')
+      get :create_twitter
+      response.should redirect_to(root_path)
+    end
+
+    context "without an access_token" do
+      it "does not log me in" do
+        controller.stub(:params).and_return(access_token: nil)
+        controller.should_receive(:login_token_user).never
+        get :create_twitter
+        response.should render_template(:new)
+      end
+    end
+  end
+
   describe "GET / DELETE /sign_out" do
 
     it "should successfully logout a user" do
