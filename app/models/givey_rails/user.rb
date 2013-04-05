@@ -2,6 +2,8 @@ module GiveyRails
   class User
     include GiveyModel
     #validates_presence_of :email, :password
+
+    attr_accessor :selected_charity_id
     # RELATIONSHIPS
 
     def selected_entity
