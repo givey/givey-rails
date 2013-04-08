@@ -15,7 +15,7 @@ module GiveyRails
     end
 
     def addresses
-      @addresses.empty? ? [Address.new(first_name: first_name, last_name: last_name, country: 'GB')] : @addresses
+      @addresses.empty? ? [GiveyRails::Address.new(first_name: first_name, last_name: last_name, country: 'GB')] : @addresses
     end
 
     def following?(user)
