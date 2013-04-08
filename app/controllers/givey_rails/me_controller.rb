@@ -4,7 +4,7 @@ module GiveyRails
 
     # GET /sign_up
     def new
-      @me = GiveyRails::User.new
+      @me = GiveyRails::User.new(email: nil, givey_tag: nil, password: nil, password_confirmation: nil)
     end
 
     # POST /me
