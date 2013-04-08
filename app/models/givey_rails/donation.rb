@@ -31,7 +31,7 @@ module GiveyRails
 
     def donation_images_html
       full_string = "div(avatar). " + donation_images_textile.join
-      RedCloth.new(full_string, [:lite_mode]).to_html  
+      RedCloth.new(full_string).to_html  
     end
 
     def time_donation_format(seconds)
