@@ -30,7 +30,7 @@ module GiveyRails
     end
 
     def donation_images_html
-      full_string = "div(avatar). " + donation_images_textile.join
+      full_string = donation_images_textile.map{|s| "div(avatar). " + s}.join("\n\n")
       RedCloth.new(full_string).to_html  
     end
 
