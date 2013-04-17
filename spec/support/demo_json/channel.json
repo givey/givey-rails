@@ -1,0 +1,35 @@
+{
+  "node_type" : "channel",
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "node_type" : "charity"
+}
+,
+  "id" : "5107ae2956c02cf494000001",
+  "name" : "All Dogs Go To Heaven",
+  "givey_tag" : "ALLDOGS",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "description" : "This is a big dog.",
+  "donors" : [
+  ],
+  "donor_count" : 0,
+  "supporters" : [
+      { "supporter" : {
+        "id" : "500a99af3314141896000002",
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "short_name" : "Nick",
+        "givey_tag" : "NICK1",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
+      }}
+      
+  ],
+  "supporter_count" : 1
+}

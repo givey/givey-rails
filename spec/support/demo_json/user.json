@@ -1,0 +1,102 @@
+{
+  "id" : "500a99af3314141896000002",
+  "first_name" : "Nick",
+  "last_name" : "Reavill",
+  "short_name" : "Nick",
+  "givey_tag" : "NICK1",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "givey_score" : 19,
+  "money_total" : 8000,
+  "voice_total" : 3200,
+  "time_total" : 18000,
+  "stuff_total" : 0,
+  "currency" : "GBP",
+  "biography" : "",
+  "interests" : "",
+  "location" : "Team Kenya",
+  "sex" : "male",
+  "occupation" : "",
+  "website_url" : "",
+  "followees" : [
+      {"followee" : {
+        "id" : "4fd857343314140b69000004",
+        "first_name" : null,
+        "last_name" : null,
+        "short_name" : "NICK6",
+        "givey_tag" : "NICK6",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png"
+      }}
+      ,
+      {"followee" : {
+        "id" : "4fd859a23314140b69000006",
+        "first_name" : "Joosty",
+        "last_name" : "Jonquil",
+        "short_name" : "Joosty",
+        "givey_tag" : "NICK7",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/test_avatar_2.jpg"
+      }}
+      ,
+      {"followee" : {
+        "id" : "50129f5b3314144950000004",
+        "first_name" : "James",
+        "last_name" : "Lattimore",
+        "short_name" : "James",
+        "givey_tag" : "JAMES",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346160999/xe3f46fnwhaoj0yj3svvbg.jpg"
+      }}
+      
+  ],
+  "followee_count" : 3,
+  "followers" : [
+      {"follower" : {
+        "id" : "4ff472633314141dc6000002",
+        "first_name" : null,
+        "last_name" : null,
+        "short_name" : "JAMBO",
+        "givey_tag" : "JAMBO",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png"
+      }}
+      
+  ],
+  "follower_count" : 1,
+  "liked_charity_ids" : [
+      "4fe84d5b3314140f37000001"
+      
+  ],
+  "selected_charity" : null,
+  "selected_channel" : {
+  "id" : "5107ae2956c02cf494000001",
+  "name" : "All Dogs Go To Heaven",
+  "givey_tag" : "ALLDOGS",
+  "description" : "This is a big dog.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "node_type" : "charity"
+}
+,
+  "node_type" : "channel"
+}
+,
+  "business" : {
+  "id" : "512cc91c56c02c77f1000002",
+  "name" : "Test Business",
+  "givey_tag" : "TESTBUSINESS",
+  "about" : "",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "node_type" : "business"
+}
+,
+  "employee_match_exists" : false,
+  "business_id" : "512cc91c56c02c77f1000002",
+  "node_type" : "user"
+}

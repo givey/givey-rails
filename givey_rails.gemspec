@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "givey_ruby", "0.0.5"
   s.add_dependency "eu_central_bank"
   s.add_dependency "RedCloth"
+  s.add_dependency "hashie"
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"

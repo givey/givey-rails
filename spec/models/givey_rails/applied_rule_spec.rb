@@ -2,6 +2,13 @@ require 'spec_helper'
 
 module GiveyRails
   describe AppliedRule do
+
+    it "should have all the correct accessors" do
+      donation_hash.applied_rules.first.applied_rule.keys.each do |method_from_json_key|
+        AppliedRule.new.should respond_to(method_from_json_key)
+      end
+    end
+
     describe "#persisted?" do
       context "without an id" do
         it "returns false" do

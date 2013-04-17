@@ -2,6 +2,25 @@ module GiveyRails
   class Charity
     include GiveyRails::GiveyModel
 
+    attr_accessor :id,
+      :name,
+      :givey_tag,
+      :info_description,
+      :description,
+      :avatar_url,
+      :avatar_thumb_url,
+      :charity_donations_total,
+      :time_donation_accepted,
+      :stuff_donation_accepted,
+      :has_channels,
+      :channels,
+      :donors,
+      :donor_count,
+      :supporters,
+      :supporter_count,
+      :has_admin_user,
+      :node_type
+
     def name_and_tag
       "#{givey_tag} - #{name}"
     end

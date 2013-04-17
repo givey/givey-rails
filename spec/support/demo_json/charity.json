@@ -1,0 +1,62 @@
+{
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "charity_donations_total" : 7200,
+  "time_donation_accepted" : false,
+  "stuff_donation_accepted" : false,
+  "has_channels" : true,
+  "channels" : [
+      { "channel" : {
+        "id" : "510656b656c02ce9df000001",
+        "name" : "No Horses for Courses Campaign",
+        "description" : "Help the horses",
+        "givey_tag" : "RSPCA1"
+      }}
+      ,
+      { "channel" : {
+        "id" : "5107ae2956c02cf494000001",
+        "name" : "All Dogs Go To Heaven",
+        "description" : "This is a big dog.",
+        "givey_tag" : "ALLDOGS"
+      }}
+      ,
+      { "channel" : {
+        "id" : "5107ae8a56c02cf494000002",
+        "name" : "Lizards have feelings too",
+        "description" : "LIZARD!",
+        "givey_tag" : "LIZARDS"
+      }}
+      
+  ],
+  "donors" : [
+      { "donor" : {
+        "id" : "500a99af3314141896000002",
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "short_name" : "Nick",
+        "givey_tag" : "NICK1",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
+      }}
+      ,
+      { "donor" : {
+        "id" : "50129f5b3314144950000004",
+        "first_name" : "James",
+        "last_name" : "Lattimore",
+        "short_name" : "James",
+        "givey_tag" : "JAMES",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346160999/xe3f46fnwhaoj0yj3svvbg.jpg"
+      }}
+      
+  ],
+  "donor_count" : 2,
+  "supporters" : [
+  ],
+  "supporter_count" : 0,
+  "has_admin_user" : true,
+  "node_type" : "charity"
+}

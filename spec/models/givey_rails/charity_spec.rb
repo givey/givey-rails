@@ -2,6 +2,20 @@ require 'spec_helper'
 
 module GiveyRails
   describe Charity do
+
+    it_behaves_like "a givey_rails model with attr_accessors"
+
+    describe "correct accessors" do
+
+      it "should have all the correct accessors" do
+        charity = Charity.new
+        charity_hash.keys.each do |charity_method|
+          charity.should respond_to(charity_method)
+        end
+      end
+
+    end
+
     describe "#name_and_tag" do
       it "concatenates name and tag" do
         charity = Charity.new(name: 'Heroes', givey_tag: "HERO")

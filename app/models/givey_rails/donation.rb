@@ -2,6 +2,33 @@ module GiveyRails
   class Donation
     include GiveyRails::GiveyModel
 
+    attr_accessor :node_type,
+      :user,
+      :donation_type,
+      :donation_string_textile,
+      :donation_images_textile,
+      :charity,
+      :channel,
+      :giver_target,
+      :id,
+      :activity_id,
+      :created_at,
+      :donated_at,
+      :user_id,
+      :user_name,
+      :user_thumb_url,
+      :amount,
+      :currency,
+      :charity_name,
+      :charity_id,
+      :any_stories,
+      :channel_id,
+      :channel_name,
+      :channel_givey_tag,
+      :combined_amount,
+      :applied_rules,
+      :stream_thumb_url
+
     validates_presence_of :amount
 
     def donated_entity

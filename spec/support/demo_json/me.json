@@ -1,0 +1,198 @@
+{
+  "id" : "500a99af3314141896000002",
+  "first_name" : "Nick",
+  "last_name" : "Reavill",
+  "email" : "nick1@givey.com",
+  "secondary_email" : "noop@neap.com",
+  "short_name" : "Nick",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
+  "twitter_linked" : true,
+  "twitter_nickname" : null,
+  "sms_phone_number" : "",
+  "facebook_linked" : true,
+  "ppx_status" : "approved",
+  "total_privacy" : false,
+  "amount_privacy" : false,
+  "giftaid" : true,
+  "givey_tag" : "NICK1",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "givey_score" : 19,
+  "money_total" : 8000,
+  "voice_total" : 3200,
+  "time_total" : 18000,
+  "stuff_total" : 0,
+  "currency" : "GBP",
+  "time_donation_allowed" : true,
+  "stuff_donation_allowed" : false,
+  "biography" : "",
+  "interests" : "",
+  "location" : "Team Kenya",
+  "sex" : "male",
+  "occupation" : "",
+  "website_url" : "",
+    "facebook_uid" : null,
+    "facebook_token" : null,
+  "followees" : [
+      {"followee" : {
+        "id" : "4fd857343314140b69000004",
+        "first_name" : null,
+        "last_name" : null,
+        "givey_tag" : "NICK6",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png"
+      }}
+      ,
+      {"followee" : {
+        "id" : "4fd859a23314140b69000006",
+        "first_name" : "Joosty",
+        "last_name" : "Jonquil",
+        "givey_tag" : "NICK7",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/test_avatar_2.jpg"
+      }}
+      ,
+      {"followee" : {
+        "id" : "50129f5b3314144950000004",
+        "first_name" : "James",
+        "last_name" : "Lattimore",
+        "givey_tag" : "JAMES",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346160999/xe3f46fnwhaoj0yj3svvbg.jpg"
+      }}
+      
+  ],
+  "followee_count" : 3,
+  "followee_ids" : [
+      "4fd857343314140b69000004"
+      ,
+      "4fd859a23314140b69000006"
+      ,
+      "50129f5b3314144950000004"
+      
+  ],
+  "followers" : [
+      {"follower" : {
+        "id" : "4ff472633314141dc6000002",
+        "first_name" : null,
+        "last_name" : null,
+        "givey_tag" : "JAMBO",
+        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png"
+      }}
+      
+  ],
+  "follower_count" : 1,
+  "liked_charity_ids" : [
+      "4fe84d5b3314140f37000001"
+      
+  ],
+  "selected_charity" : {},
+  "selected_channel" : {
+  "id" : "5107ae2956c02cf494000001",
+  "name" : "All Dogs Go To Heaven",
+  "givey_tag" : "ALLDOGS",
+  "description" : "This is a big dog.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359457837/hzpmowns9ackgqf3f1ll.jpg",
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "node_type" : "charity"
+}
+,
+  "node_type" : "channel"
+}
+,
+  "managed_charity_ids" : [
+      "RSPCA"
+      
+  ],
+  "addresses" : [
+      {"address" : {
+        "id" : "500a9dbc3314141896000005",
+        "address_name" : null,
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "address1" : "54 Hollywood Crescent",
+        "address2" : "",
+        "address3" : "",
+        "city" : "Newcastle",
+        "county" : "Tyne &amp; Wear",
+        "country" : "GB",
+        "post_code" : "NE3 5DP",
+        "phone_number" : null,
+        "node_type" : "address"
+      }}
+
+      ,
+      {"address" : {
+        "id" : "500a9dbf3314141896000006",
+        "address_name" : null,
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "address1" : "54 Hollywood Crescent",
+        "address2" : "",
+        "address3" : "",
+        "city" : "Newcastle",
+        "county" : "Tyne &amp; Wear",
+        "country" : "GB",
+        "post_code" : "NE3 5DP",
+        "phone_number" : null,
+        "node_type" : "address"
+      }}
+
+      ,
+      {"address" : {
+        "id" : "500a9eca3314141896000007",
+        "address_name" : null,
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "address1" : "54 Hollywood Crescent",
+        "address2" : "",
+        "address3" : "",
+        "city" : "Newcastle",
+        "county" : "Tyne &amp; Wear",
+        "country" : "GB",
+        "post_code" : "NE3 5DP",
+        "phone_number" : null,
+        "node_type" : "address"
+      }}
+
+      ,
+      {"address" : {
+        "id" : "500a9edb3314141896000008",
+        "address_name" : null,
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "address1" : "54 Hollywood Crescent",
+        "address2" : "",
+        "address3" : "",
+        "city" : "Newcastle",
+        "county" : "Tyne &amp; Wear",
+        "country" : "GB",
+        "post_code" : "NE3 5DP",
+        "phone_number" : null,
+        "node_type" : "address"
+      }}
+
+      
+
+  ],
+  "business" : {
+  "id" : "512cc91c56c02c77f1000002",
+  "name" : "Test Business",
+  "givey_tag" : "TESTBUSINESS",
+  "about" : "",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "node_type" : "business"
+}
+,
+  "employee_match_exists" : false,
+  "business_id" : "512cc91c56c02c77f1000002",
+  "email_flags" : [
+      "welcome_email"
+      
+  ]
+}

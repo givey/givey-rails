@@ -2,6 +2,9 @@ require 'spec_helper'
 
 module GiveyRails
   describe Donation do
+
+    it_behaves_like "a givey_rails model with attr_accessors"
+
     describe "#persisted?" do
       context "without an id" do
         it "returns false" do
@@ -66,7 +69,7 @@ module GiveyRails
     describe "#donation_images_html" do
       it "should render the correct string" do
         donation = Donation.new(donation_images_textile: ["!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"]) 
-        donation.donation_images_html.should == '<img src="https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg" class="user avatar" alt="" />'
+        donation.donation_images_html.should == '<div class="avatar"><img src="https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg" class="user avatar" alt="" /></div>'
       end
     end
 

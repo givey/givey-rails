@@ -3,7 +3,56 @@ module GiveyRails
     include GiveyModel
     #validates_presence_of :email, :password
 
-    attr_accessor :selected_charity_id
+    attr_accessor :id,
+      :first_name,
+      :last_name,
+      :email,
+      :secondary_email,
+      :short_name,
+      :avatar_url,
+      :twitter_linked,
+      :twitter_nickname,
+      :sms_phone_number,
+      :facebook_linked,
+      :ppx_status,
+      :total_privacy,
+      :amount_privacy,
+      :giftaid,
+      :givey_tag,
+      :avatar_thumb_url,
+      :givey_score,
+      :money_total,
+      :voice_total,
+      :time_total,
+      :stuff_total,
+      :currency,
+      :time_donation_allowed,
+      :stuff_donation_allowed,
+      :biography,
+      :interests,
+      :location,
+      :sex,
+      :occupation,
+      :website_url,
+      :facebook_uid,
+      :facebook_token,
+      :followees,
+      :followee_count,
+      :followee_ids,
+      :followers,
+      :follower_count,
+      :liked_charity_ids,
+      :selected_charity,
+      :selected_channel,
+      :managed_charity_ids,
+      :addresses,
+      :business,
+      :employee_match_exists,
+      :business_id,
+      :email_flags,
+      :node_type
+    
+    
     # RELATIONSHIPS
 
     def selected_entity
@@ -15,7 +64,13 @@ module GiveyRails
     end
 
     def addresses
-      @addresses.empty? ? [GiveyRails::Address.new(first_name: first_name, last_name: last_name, country: 'GB')] : @addresses
+      puts "GiveyRails::Address"
+      puts @addresses.inspect
+      if @addresses.empty? || @addresses.nil?
+        [GiveyRails::Address.new(first_name: first_name, last_name: last_name, country: 'GB')]
+      else
+        @addresses
+      end
     end
 
     def following?(user)

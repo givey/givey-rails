@@ -1,0 +1,83 @@
+{
+  "node_type" : "donation",
+  "user" : {
+  "id" : "500a99af3314141896000002",
+  "short_name" : "Nick",
+  "givey_tag" : "NICK1",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "employee_match_exists" : false,
+  "business_id" : "512cc91c56c02c77f1000002",
+  "node_type" : "user"
+}
+,
+  "donation_type" : null,
+  "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-gbp1000-amt to [\"(charity).No Horses for Courses Campaign\":http://givey.com/RSPCA1], matched by [\"(business).Test Business\":http://givey.com/TESTBUSINESS]",
+  "donation_images_textile" : [
+      "!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
+      ,
+      "!(charity avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg!"
+      ,
+      "!(business avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png!"
+      
+    ],
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "node_type" : "charity"
+}
+,
+  "channel" : {
+  "id" : "510656b656c02ce9df000001",
+  "name" : "No Horses for Courses Campaign",
+  "givey_tag" : "RSPCA1",
+  "description" : "Help the horses",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000002",
+  "name" : "RSPCA",
+  "givey_tag" : "RSPCA",
+  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
+  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "node_type" : "charity"
+}
+,
+  "node_type" : "channel"
+}
+,
+  "giver_target" : null,
+  "id" : "5107cf6f56c02cba2e000001",
+  "activity_id" : "MTM2NDMxMDM4M0NUSDU",
+  "created_at" : "2013-01-29 13:32:31 UTC",
+  "donated_at" : "2013-01-29 13:32:30 UTC",
+  "user_id" : "NICK1",
+  "user_name" : "Nick",
+  "user_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "amount" : 1000,
+  "currency" : "gbp",
+  "charity_name" : "RSPCA",
+  "charity_id" : "RSPCA",
+  "any_stories" : false,
+    "channel_id" : "RSPCA1",
+    "channel_name" : "No Horses for Courses Campaign",
+    "channel_givey_tag" : "RSPCA1",
+    "combined_amount" : 1100,
+    "applied_rules" : [
+      {"applied_rule" : 
+      {
+      "business_id" : "TESTBUSINESS",
+      "business_name" : "Test Business",
+      "business_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+      "amount" : 100
+      }}
+      
+    ],
+  "stream_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg"
+}
