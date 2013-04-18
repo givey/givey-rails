@@ -31,5 +31,15 @@ module GiveyRails
       user.id.should == "123049"
     end
 
+    it "returns a new address if no addresses present" do
+      user  = User.new
+      user.addresses.first.should be_kind_of(GiveyRails::Address)
+    end
+
+    it "returns a new address if empty addresses returned by API" do
+      user  = User.new(user_hash.merge(addresses: []))
+      user.addresses.first.should be_kind_of(GiveyRails::Address)
+    end
+
   end
 end

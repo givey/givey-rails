@@ -11,7 +11,7 @@ module GiveyRails
 
     def initialize(attributes = {})
       attributes.each do |name, value|
-        self.class.send(:attr_accessor, name.to_sym)
+        self.class.send(:attr_accessor, name.to_sym) unless self.class.method_defined?(name.to_sym)
         value = DateTime.parse(value) if value.respond_to?(:match) && value.match(DATETIME_FORMAT).present?
         value = build_relationship(name, value) if value.kind_of? Hash
         value = build_relationships(name, value) if value.kind_of? Array
@@ -22,7 +22,6 @@ module GiveyRails
     def persisted?
       respond_to?(:id) && !self.id.nil?
     end
-
 
     private
 

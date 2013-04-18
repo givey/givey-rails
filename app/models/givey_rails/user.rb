@@ -64,9 +64,7 @@ module GiveyRails
     end
 
     def addresses
-      puts "GiveyRails::Address"
-      puts @addresses.inspect
-      if @addresses.empty? || @addresses.nil?
+      if @addresses.nil? || @addresses.empty?
         [GiveyRails::Address.new(first_name: first_name, last_name: last_name, country: 'GB')]
       else
         @addresses
