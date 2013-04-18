@@ -168,5 +168,6 @@ DEPENDENCIES
   givey_rails!
   jquery-rails
   log_buddy
+  rake
   rspec-rails
   sqlite3
