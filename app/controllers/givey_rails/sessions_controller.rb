@@ -4,6 +4,7 @@ module GiveyRails
 
     respond_to :html
 
+    before_filter :find_and_set_referrer, only: [:new_facebook, :new_twitter]
     before_filter :redirect_if_signed_in, only: [:new]
 
     # GET /sign_in
@@ -22,7 +23,6 @@ module GiveyRails
 
     # GET /sign_in/facebook
     def new_facebook
-      set_referrer(request.referer)
       redirect_to authentication_url("facebook")
     end
 
@@ -41,7 +41,6 @@ module GiveyRails
 
     # GET /sign_in/twitter
     def new_twitter
-      set_referrer(request.referer)
       redirect_to authentication_url ("twitter")
     end
 
@@ -66,6 +65,11 @@ module GiveyRails
 
     def redirect_if_signed_in
       redirect_to root_path if signed_in?
+    end
+
+    def find_and_set_referrer
+      referrer = params[:client_redirect_url] || request.referer
+      set_referrer(referrer)
     end
 
     def authentication_url(provider)

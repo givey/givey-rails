@@ -36,9 +36,16 @@ describe GiveyRails::SessionsController do
 
     it "should do the correct redirect" do
       controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      controller.should_receive(:find_and_set_referrer)
       get :new_facebook
       response.status.should == 302
       response.header["Location"].should match(/authorize\/facebook\?provider_redirect_url/)
+    end
+
+    it "should store the provided redirect" do
+      controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      get :new_facebook, client_redirect_url: "/an_url"
+      session[:referrer].should == "/an_url"
     end
 
   end
@@ -67,6 +74,12 @@ describe GiveyRails::SessionsController do
       get :new_twitter
       response.status.should == 302
       response.header["Location"].should match(/authorize\/twitter\?provider_redirect_url/)
+    end
+
+    it "should store the provided redirect" do
+      controller.stub_chain(:access_token, :token).and_return('123sdf654')
+      get :new_twitter, client_redirect_url: "/an_url"
+      session[:referrer].should == "/an_url"
     end
   end
 
