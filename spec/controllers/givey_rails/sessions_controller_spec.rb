@@ -2,6 +2,16 @@ require 'spec_helper'
 
 describe GiveyRails::SessionsController do
 
+  describe "GET /sign_in" do
+
+    it "should redirect if signed in" do
+      controller.stub(:signed_in?).and_return(true)
+      get :new
+      response.should redirect_to(root_path)
+    end
+
+  end
+
   describe "POST /sign_in" do
 
     it "should successfully login a user" do

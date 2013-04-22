@@ -4,6 +4,8 @@ module GiveyRails
 
     respond_to :html
 
+    before_filter :redirect_if_signed_in, only: [:new]
+
     # GET /sign_in
     def new
     end
@@ -61,6 +63,10 @@ module GiveyRails
     end
 
     private
+
+    def redirect_if_signed_in
+      redirect_to root_path if signed_in?
+    end
 
     def authentication_url(provider)
       [ENV['GIVEY_API_HOST'], GiveyRuby.configuration.api_version, "authorize", provider].join("/") + "?provider_redirect_url=#{return_url(provider)}"
