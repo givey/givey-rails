@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Summary of GiveyRails."
   s.description = "Description of GiveyRails."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.11"
   s.add_dependency "givey_ruby", "0.0.5"
