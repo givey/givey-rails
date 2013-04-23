@@ -57,7 +57,10 @@ module GiveyRails
     end
 
     def donation_images_html
-      full_string = donation_images_textile.map{|s| "div(avatar). " + s}.join("\n\n")
+      full_string = donation_images_textile.map do |s|
+        css_classes = s.match(/\((.+)\)/)[1]
+        "div(#{css_classes}). " + s
+      end.join("\n\n")
       RedCloth.new(full_string).to_html  
     end
 

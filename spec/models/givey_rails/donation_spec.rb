@@ -69,7 +69,21 @@ module GiveyRails
     describe "#donation_images_html" do
       it "should render the correct string" do
         donation = Donation.new(donation_images_textile: ["!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"]) 
-        donation.donation_images_html.should == '<div class="avatar"><img src="https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg" class="user avatar" alt="" /></div>'
+        donation.donation_images_html.should == '<div class="user avatar"><img src="https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg" class="user avatar" alt="" /></div>'
+      end
+
+      it "adds in extra classes for image wrapper divs" do
+        donation = Donation.new
+        donation.donation_images_textile  = [
+          "!(user avatar)http://example.com/img.jpg!",
+          "!(charity avatar)http://example.com/img.jpg!",
+          "!(via avatar)http://example.com/img.jpg!",
+          "!(business avatar)http://example.com/img.jpg!",
+        ]
+        donation.donation_images_html.should match /<div class=\"user avatar\">/
+        donation.donation_images_html.should match /<div class=\"charity avatar\">/
+        donation.donation_images_html.should match /<div class=\"via avatar\">/
+        donation.donation_images_html.should match /<div class=\"business avatar\">/
       end
     end
 
