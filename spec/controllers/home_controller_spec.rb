@@ -48,5 +48,32 @@ describe HomeController do
 
   end
 
+  describe "current_givey_user" do
+    let(:mock_session) do
+      { user_id: '123', business_id: '345', access_token: 'token'}
+    end
+
+    let(:invalid_response) do
+      { 'error' => 'Invalid OAuth Request'}.to_json
+    end
+
+    before do
+      controller.stub(:session).and_return(mock_session) 
+      controller.access_token.stub_chain(:get, :body).and_return(invalid_response)
+    end
+
+    it "redirects to '/sign_in'" do
+      get :invalid_token
+      response.should redirect_to("/sign_in")
+    end
+
+    it "clears the session" do
+      get :invalid_token
+      [:business_id, :user_id, :access_token].each do |key|
+        controller.session[key].should be_nil
+      end
+    end
+  end
+
 
 end

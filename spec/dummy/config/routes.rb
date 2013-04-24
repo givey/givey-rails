@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   match "protected" => 'home#protected', as: :protected
   match "redirected" => 'home#redirected', as: :redirected
+  match "invalid_token" => 'home#invalid_token', as: :invalid_token
   root :to => 'home#index'
 
 end

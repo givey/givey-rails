@@ -1,5 +1,6 @@
 
 module GiveyRails
+  class InvalidOauthToken < ::StandardError; end
 
   module ControllerHelpers
 
@@ -8,6 +9,13 @@ module GiveyRails
 
     included do
       helper_method :signed_in?, :current_givey_user, :is_it_me?
+
+      rescue_from GiveyRails::InvalidOauthToken do
+        [:business_id, :user_id, :access_token].each do |key|
+          session[key] = nil
+        end
+        redirect_to new_session_path
+      end
     end
 
     module ClassMethods
@@ -26,14 +34,8 @@ module GiveyRails
       @current_givey_user ||= begin
         if signed_in?
           response = get_token_response("/me")
-          if response['error']
-            [:business_id, :user_id, :access_token].each do |key|
-              session[key] = nil
-            end
-            nil
-          else
-            GiveyRails::User.new(response)
-          end
+          raise GiveyRails::InvalidOauthToken if response['error']
+          GiveyRails::User.new(response)
         else
           nil
         end

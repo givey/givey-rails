@@ -32,14 +32,15 @@ describe ApplicationController do
       let(:session) do
         { user_id: '3', access_token: '123sdf21' }
       end
-      it "clears the session variables, effectively signing user out" do
+
+      before do
         application_controller.stub(:session).and_return(session)
         OAuth2::AccessToken.should_receive(:new).and_return(session[:access_token])
         application_controller.access_token.stub_chain(:get, :body).and_return({ 'error' => 'Invalid OAuth Request'}.to_json)
-        application_controller.current_givey_user.should be_nil
-        [:business_id, :user_id, :access_token].each do |key|
-          session[key].should be_nil
-        end
+      end
+
+      it "raises an exception" do
+        expect { application_controller.current_givey_user }.to raise_error(GiveyRails::InvalidOauthToken)
       end
     end
 

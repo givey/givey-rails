@@ -14,4 +14,9 @@ class HomeController < ApplicationController
     render text: 'PROTECTED'
   end
 
+  def invalid_token
+    current_givey_user
+    render text: 'invalid'
+  end
+
 end
