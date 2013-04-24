@@ -25,7 +25,15 @@ module GiveyRails
     def current_givey_user
       @current_givey_user ||= begin
         if signed_in?
-          GiveyRails::User.new(get_token_response("/me"))
+          response = get_token_response("/me")
+          if response['error']
+            [:business_id, :user_id, :access_token].each do |key|
+              session[key] = nil
+            end
+            nil
+          else
+            GiveyRails::User.new(response)
+          end
         else
           nil
         end
