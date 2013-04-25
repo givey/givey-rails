@@ -4,7 +4,7 @@ module GiveyRails
 
     respond_to :html
 
-    before_filter :find_and_set_referrer, only: [:new_facebook, :new_twitter]
+    before_filter :find_and_set_referrer, only: [:new_facebook, :new_twitter, :new]
     before_filter :redirect_if_signed_in, only: [:new]
 
     # GET /sign_in

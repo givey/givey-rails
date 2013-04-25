@@ -4,10 +4,19 @@ describe GiveyRails::SessionsController do
 
   describe "GET /sign_in" do
 
-    it "should redirect if signed in" do
-      controller.stub(:signed_in?).and_return(true)
-      get :new
-      response.should redirect_to(root_path)
+    context "when signed in" do
+      it "redirects" do
+        controller.stub(:signed_in?).and_return(true)
+        get :new
+        response.should redirect_to(root_path)
+      end
+    end
+
+    context "with client_redirect_url parameter" do
+      it "updates the session referer" do
+        get :new, client_redirect_url: "/an_url"
+        session[:referrer].should == "/an_url"
+      end
     end
 
   end
