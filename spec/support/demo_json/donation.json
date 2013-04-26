@@ -65,8 +65,17 @@
   "currency" : "gbp",
   "charity_name" : "RSPCA",
   "charity_id" : "RSPCA",
-  "any_stories" : false,
-  "story" : null,
+  "any_stories" : true,
+  "story" : {
+  "id" : "517a886756c02c68ff000002",
+  "created_at" : "2013-04-26 14:00:07 UTC",
+  "content_title" : null,
+  "content_text" : "it went well",
+  "activity_asset_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1366984809/hgw0v3tzqghnh33evuia.jpg",
+  "activity_asset_square_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_400,w_400/v1366984809/hgw0v3tzqghnh33evuia.jpg",
+  "activity_asset_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/v1366984809/hgw0v3tzqghnh33evuia.jpg"
+}
+,
     "channel_id" : "RSPCA1",
     "channel_name" : "No Horses for Courses Campaign",
     "channel_givey_tag" : "RSPCA1",

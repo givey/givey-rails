@@ -9,7 +9,11 @@ module GiveyRails
       :avatar_url,
       :avatar_thumb_url,
       :email_domain,
-      :ppx_status
+      :ppx_status,
+      :match_total_cache,
+      :match_count_cache,
+      :public_profile,
+      :node_type
 
     def name_and_tag
       "#{givey_tag} - #{name}"
