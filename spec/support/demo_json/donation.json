@@ -66,6 +66,7 @@
   "charity_name" : "RSPCA",
   "charity_id" : "RSPCA",
   "any_stories" : false,
+  "story" : null,
     "channel_id" : "RSPCA1",
     "channel_name" : "No Horses for Courses Campaign",
     "channel_givey_tag" : "RSPCA1",

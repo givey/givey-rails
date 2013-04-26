@@ -2,6 +2,9 @@ require 'spec_helper'
 
 module GiveyRails
   describe Story do
+
+    it_behaves_like "a givey_rails model with attr_accessors"
+    
     context "without id" do
       describe "#persisted?" do
         it "returns false" do

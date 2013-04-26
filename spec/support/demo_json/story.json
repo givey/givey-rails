@@ -1,0 +1,72 @@
+{
+  "id" : "5016612f3314140a72000033",
+  "created_at" : "2012-06-11 10:25:51 UTC",
+  "user_id" : "NICK1",
+  "user_name" : "Nick",
+  "user_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "content_title" : "This is a Story",
+  "content_text" : null,
+  "activity_asset_url" : null,
+  "activity_asset_square_url" : null,
+  "activity_asset_thumb_url" : null,
+  "node_type" : "story",
+  "donation" : {
+  "node_type" : "donation",
+  "user" : {
+  "id" : "500a99af3314141896000002",
+  "short_name" : "Nick",
+  "givey_tag" : "NICK1",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "employee_match_exists" : true,
+  "business_id" : "512cc91c56c02c77f1000002",
+  "node_type" : "user"
+}
+,
+  "donation_type" : null,
+  "canonical_url" : "https://www.givey.com/nick1/MTM2NDMxMDM4MXJ5ajQ",
+  "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-GBP200-amt to [\"(charity).Action For Kids\":http://givey.com/AFK]",
+  "donation_images_textile" : [
+      "!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
+      ,
+      "!(charity avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg!"
+      
+    ],
+  "charity" : {
+  "id" : "4fe84d5b3314140f37000013",
+  "name" : "Action For Kids",
+  "givey_tag" : "AFK",
+  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
+  "node_type" : "charity"
+}
+,
+  "channel" : null,
+  "giver_target" : null,
+  "id" : "501661273314140a72000031",
+  "activity_id" : "MTM2NDMxMDM4MXJ5ajQ",
+  "created_at" : "2012-05-30 10:25:43 UTC",
+  "donated_at" : "2013-03-26 15:06:21 UTC",
+  "user_id" : "NICK1",
+  "user_name" : "Nick",
+  "user_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "amount" : 200,
+  "currency" : "GBP",
+  "charity_name" : "Action For Kids",
+  "charity_id" : "AFK",
+  "any_stories" : true,
+  "story" : {
+  "id" : "5016612f3314140a72000033",
+  "created_at" : "2012-06-11 10:25:51 UTC",
+  "content_title" : "This is a Story",
+  "content_text" : null,
+  "activity_asset_url" : null,
+  "activity_asset_square_url" : null,
+  "activity_asset_thumb_url" : null
+}
+,
+  "stream_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg"
+}
+
+}

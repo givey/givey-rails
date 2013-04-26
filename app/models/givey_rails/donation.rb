@@ -10,6 +10,7 @@ module GiveyRails
       :charity,
       :channel,
       :giver_target,
+      :story,
       :id,
       :activity_id,
       :created_at,
