@@ -14,7 +14,8 @@ module GiveyRails
       :activity_asset_square_url,
       :activity_asset_thumb_url,
       :node_type,
-      :donation
+      :donation,
+      :donation_id
 
   end
 end
