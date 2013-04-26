@@ -4,8 +4,8 @@
   "givey_tag" : "RSPCA",
   "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
   "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "avatar_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/Dangerous1hashtag.jpg",
-  "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Dangerous1hashtag.jpg",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
   "charity_donations_total" : 7200,
   "time_donation_accepted" : false,
   "stuff_donation_accepted" : false,
@@ -40,7 +40,7 @@
         "last_name" : "Reavill",
         "short_name" : "Nick",
         "givey_tag" : "NICK1",
-        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
+        "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
       }}
       ,
       { "donor" : {
@@ -49,7 +49,7 @@
         "last_name" : "Lattimore",
         "short_name" : "James",
         "givey_tag" : "JAMES",
-        "avatar_thumb_url" : "https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346160999/xe3f46fnwhaoj0yj3svvbg.jpg"
+        "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346160999/xe3f46fnwhaoj0yj3svvbg.jpg"
       }}
       
   ],

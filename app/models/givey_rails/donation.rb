@@ -27,7 +27,8 @@ module GiveyRails
       :channel_givey_tag,
       :combined_amount,
       :applied_rules,
-      :stream_thumb_url
+      :stream_thumb_url,
+      :canonical_url
 
     validates_presence_of :amount
 
