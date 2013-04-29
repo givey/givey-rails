@@ -19,5 +19,9 @@ module GiveyRails
       "#{givey_tag} - #{name}"
     end
 
+    def paypal?
+      ppx_status == 'approved'
+    end
+
   end
 end

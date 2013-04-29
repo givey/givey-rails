@@ -14,5 +14,17 @@ module GiveyRails
       end
     end
 
+    describe "#paypal?" do
+      context "when approved" do
+        business = Business.new(ppx_status: 'approved')
+        business.paypal?.should == true
+      end
+
+      context "when not approved" do
+        business = Business.new(ppx_status: 'not_approved')
+        business.paypal?.should == false
+      end
+    end
+
   end
 end
