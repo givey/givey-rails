@@ -23,6 +23,13 @@ module GiveyRails
       respond_to?(:id) && !self.id.nil?
     end
 
+    def add_errors(response)
+      response.each do |attr, errors|
+        self.errors.add(attr, errors[0])
+      end
+      self
+    end
+
     private
 
     def build_relationship(name, attributes)
