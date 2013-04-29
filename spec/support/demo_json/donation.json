@@ -4,6 +4,7 @@
   "id" : "500a99af3314141896000002",
   "short_name" : "Nick",
   "givey_tag" : "NICK1",
+  "twitter_nickname" : null,
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
   "employee_match_exists" : true,
   "business_id" : "512cc91c56c02c77f1000002",
