@@ -6,6 +6,7 @@ module GiveyRails
     include ActiveModel::Validations
     include ActiveModel::Conversion
     extend ActiveModel::Naming
+    include ActiveModel::ForbiddenAttributesProtection
 
     DATETIME_FORMAT = /\A\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\Z/ # 2012-09-19T14:54:13Z
 

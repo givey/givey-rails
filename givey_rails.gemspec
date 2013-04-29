@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.11"
   s.add_dependency "givey_ruby", "0.0.5"
+  s.add_dependency "strong_parameters"
   s.add_dependency "eu_central_bank"
   s.add_dependency "RedCloth"
   s.add_dependency "hashie"

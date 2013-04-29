@@ -1,3 +1,4 @@
+require "strong_parameters"
 require "eu_central_bank"
 require "hashie"
 require "givey_ruby"
