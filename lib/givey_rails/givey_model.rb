@@ -30,8 +30,6 @@ module GiveyRails
       name = "user" if [:giver_target, :select_user].include?(name.to_sym)
       name = "charity" if [:selected_charity].include?(name.to_sym)
       name = "channel" if [:selected_channel].include?(name.to_sym)
-      #TODO: horrible kludge - "business".classify = Busines (one s)
-      name = "businesss" if [:business].include?(name.to_sym)
       name = "GiveyRails::" + name.classify
       name.constantize.new(attributes)
     end
