@@ -6,6 +6,7 @@ module GiveyRails
       :name,
       :givey_tag,
       :about,
+      :avatar,
       :avatar_url,
       :avatar_thumb_url,
       :email_domain,
