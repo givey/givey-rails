@@ -14,7 +14,9 @@ module GiveyRails
       attributes.each do |name, value|
         self.class.send(:attr_accessor, name.to_sym) unless self.class.method_defined?(name.to_sym)
         value = DateTime.parse(value) if value.respond_to?(:match) && value.match(DATETIME_FORMAT).present?
-        value = build_relationship(name, value) if value.kind_of? Hash
+        if value.kind_of?(Hash)
+          value = build_relationship(name, value) unless name.match(/cache/)
+        end
         value = build_relationships(name, value) if value.kind_of? Array
         send("#{name}=", value)
       end

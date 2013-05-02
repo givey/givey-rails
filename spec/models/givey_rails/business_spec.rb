@@ -26,5 +26,12 @@ module GiveyRails
       end
     end
 
+    describe "the cache fields" do
+      it "should recognise fields with cache in the name" do
+        business = Business.new(match_total_cache: {})
+        business.match_total_cache.should == {}
+      end
+    end
+
   end
 end
