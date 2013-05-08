@@ -48,7 +48,9 @@ module GiveyRails
       :addresses,
       :business,
       :employee_match_exists,
+      :employee_target_match_exists,
       :business_id,
+      :business_confirmed,
       :email_flags,
       :node_type
     
@@ -91,7 +93,7 @@ module GiveyRails
     def voice_total
       Money.new(@voice_total, currency).cents / 100
     end
-    #TODOEND 
+    # TODO END 
     def money_total_display
       Money.new(@money_total, currency).cents / 100
     end
@@ -120,6 +122,7 @@ module GiveyRails
       sts
     end
 
+    # STATES
     def paypal_done
       ppx_status == 'approved'
     end
@@ -131,5 +134,23 @@ module GiveyRails
     def selected_charity_done
       !selected_charity.nil?
     end
+
+    def business_state
+      if !business
+        "none"
+      elsif !business_confirmed
+        "pending"
+      elsif !employee_match_exists && !employee_target_match_exists
+        "attached"
+      elsif employee_match_exists && employee_target_match_exists
+        "all_match"
+      elsif employee_match_exists
+        "employee_match"
+      elsif employee_target_match_exists
+        "employee_target_match"
+      end
+      
+    end
+
   end
 end

@@ -3,6 +3,8 @@ require 'spec_helper'
 module GiveyRails
   describe Business do
 
+    include_context "reload models"
+
     it_behaves_like "a givey_rails model with attr_accessors"
 
     describe "#add_errors" do

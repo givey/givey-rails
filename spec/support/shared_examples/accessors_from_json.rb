@@ -1,3 +1,5 @@
+# MUST reload models to use this shared example so running order of specs doesn't affect spec passing (false passes)
+# include_context "reload models"
 shared_examples "a givey_rails model with attr_accessors" do
   
   let(:subject)     { described_class.new }

@@ -106,7 +106,9 @@
   "node_type" : "business"
 }
 ,
+  "business_confirmed" : true,
   "employee_match_exists" : true,
+  "employee_target_match_exists" : false,
   "business_id" : "512cc91c56c02c77f1000002",
   "node_type" : "user"
 }

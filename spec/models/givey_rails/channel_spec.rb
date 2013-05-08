@@ -3,6 +3,8 @@ require 'spec_helper'
 module GiveyRails
   describe Channel do
 
+    include_context "reload models"
+
     it_behaves_like "a givey_rails model with attr_accessors"
 
     describe "#name_and_tag" do

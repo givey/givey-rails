@@ -13,7 +13,7 @@
   "ppx_status" : "approved",
   "total_privacy" : false,
   "amount_privacy" : false,
-  "giftaid" : true,
+  "giftaid" : false,
   "givey_tag" : "NICK1",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
   "givey_score" : 19,
@@ -148,7 +148,9 @@
   "node_type" : "business"
 }
 ,
+  "business_confirmed" : true,
   "employee_match_exists" : true,
+  "employee_target_match_exists" : false,
   "business_id" : "512cc91c56c02c77f1000002",
   "email_flags" : [
       "welcome_email"

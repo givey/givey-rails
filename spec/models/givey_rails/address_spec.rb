@@ -3,6 +3,8 @@ require 'spec_helper'
 module GiveyRails
   describe Address do
 
+    include_context "reload models"
+
     it "should have all the correct accessors" do
       me_hash.addresses.first.address.keys.each do |method_from_json_key|
         Address.new.should respond_to(method_from_json_key)
