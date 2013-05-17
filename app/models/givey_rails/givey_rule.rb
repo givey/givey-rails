@@ -15,6 +15,7 @@ module GiveyRails
       :rule_total_month,
       :rule_total_week,
       :rule_total_day,
+      :rule_total_per_user,
       :maximum_match,
       :process_point,
       :published,
