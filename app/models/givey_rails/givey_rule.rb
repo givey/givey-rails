@@ -19,6 +19,8 @@ module GiveyRails
       :process_point,
       :published,
       :business_id,
+      :match_on,
+      :recurring,
       :application_ids
   end
 end
