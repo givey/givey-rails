@@ -6,8 +6,8 @@
   "givey_tag" : "NICK1",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "givey_score" : 19,
-  "money_total" : 8000,
+  "givey_score" : 21,
+  "money_total" : 8400,
   "voice_total" : 3200,
   "time_total" : 18000,
   "stuff_total" : 0,
@@ -62,6 +62,8 @@
   "follower_count" : 1,
   "liked_charity_ids" : [
       "4fe84d5b3314140f37000001"
+      ,
+      "4fe84d5b3314140f37000013"
       
   ],
   "selected_charity" : {
@@ -108,7 +110,7 @@
 ,
   "business_confirmed" : true,
   "employee_match_exists" : true,
-  "employee_target_match_exists" : false,
+  "employee_target_match_exists" : true,
   "business_id" : "512cc91c56c02c77f1000002",
   "node_type" : "user"
 }

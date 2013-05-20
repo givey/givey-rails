@@ -1,0 +1,14 @@
+{
+  "id" : "51965ac856c02cbe28000003",
+  "match_amount_percent" : 100,
+  "rule_total_month" : 50000,
+  "rule_total_day" : ,
+  "rule_total_per_user" : 2500,
+  "maximum_match" : 1000,
+  "published" : true,
+  "match_on" : "all",
+  "recurring" : "all",
+  "rule_type" : "employee_match",
+  "node_type" : "givey_rule"
+}
+

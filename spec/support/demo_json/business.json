@@ -8,7 +8,7 @@
   "match_total_cache" : {},
   "match_count_cache" : {},
   "email_domain" : null,
-  "ppx_status" : null,
+  "ppx_status" : "approved",
   "public_profile" : true,
   "node_type" : "business"
 }
