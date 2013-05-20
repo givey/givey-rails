@@ -13,6 +13,7 @@
   "stuff_total" : 0,
   "currency" : "GBP",
   "biography" : "",
+  "personal_message" : null,
   "interests" : "",
   "location" : "Team Kenya",
   "sex" : "male",

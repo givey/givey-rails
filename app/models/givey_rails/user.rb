@@ -29,6 +29,7 @@ module GiveyRails
       :time_donation_allowed,
       :stuff_donation_allowed,
       :biography,
+      :personal_message,
       :interests,
       :location,
       :sex,

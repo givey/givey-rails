@@ -28,10 +28,10 @@
   "starts_at" : "2013-05-18",
   "ends_at" : null,
   "next_donation" : "2013-06-20",
-  "alive" : true,
-  "published" : true,
+  "alive" : false,
+  "published" : false,
   "amount" : 200,
-  "currency" : null,
+  "currency" : "GBP",
   "donations" : [
       {"donation" : {
         "id" : "519a22b156c02cd401000001",
