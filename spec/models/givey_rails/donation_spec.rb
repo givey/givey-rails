@@ -62,6 +62,11 @@ module GiveyRails
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated $10 to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
       end
 
+      it "should render the correct string - private amount" do
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated some money to ["(charity).MD Charity":http://givey.com/MDC]') 
+        donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated some money to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
+      end
+
       it "should render the correct string - time donation" do
         donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated time-3720-time to ["(charity).MD Charity":http://givey.com/MDC]') 
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated 1 hours and 2 minutes to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'

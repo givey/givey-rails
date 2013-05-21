@@ -58,10 +58,12 @@ module GiveyRails
         str_amt       = donation_string_textile.match(/time-(\d+)-time/).captures[0].to_i
         time_str      = time_donation_format(str_amt)
         donation_string_textile.gsub(/time-\d+-time/, time_str)
-      else
+      elsif donation_string_textile =~ /amt-.+-amt/
         str_cur, str_amt  = donation_string_textile.match(/amt-([a-z]{3}|[A-Z]{3})(\d+)-amt/).captures
         money_object      = Money.new(str_amt, str_cur)
         donation_string_textile.gsub(/amt-([a-z]{3}|[A-Z]{3})/, money_object.currency.symbol).gsub(/\d+-amt/, (money_object.cents / 100).to_s)
+      else
+        donation_string_textile
       end
     end
 
