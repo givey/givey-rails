@@ -14,6 +14,9 @@ module GiveyRails
       :match_total_cache,
       :match_count_cache,
       :public_profile,
+      :profile_message,
+      :twitter_handle,
+      :facebook_page,
       :node_type
 
     def name_and_tag
