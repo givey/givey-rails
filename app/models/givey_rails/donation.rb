@@ -29,6 +29,7 @@ module GiveyRails
       :combined_amount,
       :applied_rules,
       :stream_thumb_url,
+      :pp_invoice_id,
       :canonical_url
 
     validates_presence_of :amount

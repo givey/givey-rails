@@ -7,6 +7,12 @@ module GiveyRails
 
     it_behaves_like "a givey_rails model with attr_accessors"
 
+    it "should have all the correct accessors" do
+      express_donation_hash.keys.each do |method_from_json_key|
+        Donation.new.should respond_to(method_from_json_key)
+      end
+    end
+
     describe "#persisted?" do
       context "without an id" do
         it "returns false" do
