@@ -10,14 +10,14 @@
   "twitter_nickname" : null,
   "sms_phone_number" : "7540105812",
   "facebook_linked" : true,
-  "ppx_status" : "approved",
+  "ppx_status" : "pending",
   "total_privacy" : false,
   "amount_privacy" : false,
-  "giftaid" : false,
+  "giftaid" : true,
   "givey_tag" : "NICK1",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "givey_score" : 21,
-  "money_total" : 8400,
+  "givey_score" : 25,
+  "money_total" : 14400,
   "voice_total" : 3200,
   "time_total" : 18000,
   "stuff_total" : 0,
@@ -25,7 +25,7 @@
   "time_donation_allowed" : true,
   "stuff_donation_allowed" : false,
   "biography" : "",
-  "personal_message" : null,
+  "personal_message" : "This is my message!",
   "interests" : "",
   "location" : "Team Kenya",
   "sex" : "male",
@@ -83,6 +83,8 @@
       "4fe84d5b3314140f37000001"
       ,
       "4fe84d5b3314140f37000013"
+      ,
+      "4fe84d813314140f3700174a"
       
   ],
   "selected_charity" : {
@@ -123,119 +125,17 @@
   ],
   "addresses" : [
       {"address" : {
-        "id" : "517a669956c02c8970000002",
+        "id" : "519b8d7f56c02ca909000007",
         "address_name" : null,
         "first_name" : "Nick",
         "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
+        "address1" : "15 Clork",
         "address2" : "",
         "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
+        "city" : "Ganspoton",
+        "county" : "Gurk",
         "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a319b56c02cbe28000006",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a31ef56c02cbe28000007",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a322e56c02ca909000005",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a326856c02cbe28000008",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a327956c02cbe28000009",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
-        "phone_number" : null,
-        "node_type" : "address"
-      }}
-
-      ,
-      {"address" : {
-        "id" : "519a35b856c02cbe2800000a",
-        "address_name" : null,
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "address1" : "54 Hollywood Crescent",
-        "address2" : "",
-        "address3" : "",
-        "city" : "Newcastle",
-        "county" : "Tyne &amp; Wear",
-        "country" : "GB",
-        "post_code" : "NE3 5DP",
+        "post_code" : "GK8 9IK",
         "phone_number" : null,
         "node_type" : "address"
       }}

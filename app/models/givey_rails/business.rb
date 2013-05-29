@@ -14,6 +14,12 @@ module GiveyRails
       :match_total_cache,
       :match_count_cache,
       :public_profile,
+      :moment_credits,
+      :paid_moments_count,
+      :unpaid_moments_count,
+      :profile_message,
+      :twitter_handle,
+      :facebook_page,
       :node_type
 
     def name_and_tag

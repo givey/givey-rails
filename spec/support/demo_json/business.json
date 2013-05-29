@@ -5,10 +5,18 @@
   "about" : "",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
-  "match_total_cache" : {},
-  "match_count_cache" : {},
+  "match_total_cache" : {
+    },
+  "match_count_cache" : {
+    },
   "email_domain" : null,
   "ppx_status" : "approved",
   "public_profile" : true,
+  "moment_credits" : 0,
+  "paid_moments_count" : 0,
+  "unpaid_moments_count" : 0,
+  "profile_message" : null,
+  "twitter_handle" : null,
+  "facebook_page" : null,
   "node_type" : "business"
 }
