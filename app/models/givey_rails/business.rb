@@ -20,6 +20,8 @@ module GiveyRails
       :profile_message,
       :twitter_handle,
       :facebook_page,
+      :gocardless_preauthorization_id,
+      :gocardless_preauthorization_status,
       :node_type
 
     def name_and_tag
