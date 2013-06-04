@@ -2,6 +2,21 @@ module GiveyRails
   class Charity
     include GiveyRails::GiveyModel
 
+    CATEGORIES  = [
+      #"Culture, Sport, and Recreation",
+      "Education and Science",
+      "Health and Medicine",
+      "Social Services and Relief",
+      "Environment and Protection of Animals",
+      "Housing and Community Affairs",
+      "Civil Rights and Citizenship",
+      "Philanthropic Intermediation",
+      "International",
+      "Business and Professional",
+      "Religious"
+    ]
+
+
     attr_accessor :id,
       :name,
       :givey_tag,
