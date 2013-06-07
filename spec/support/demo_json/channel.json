@@ -16,6 +16,7 @@
   "givey_tag" : "RSPCA1",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
+  "charity_donations_total" : 1000,
   "description" : "Help the horses",
   "donors" : [
       { "donor" : {
