@@ -1,4 +1,11 @@
 <section class="clearfix center">
+  <% flash.each do |key, msg| %>
+    <div class="notice flash <%= key unless key == 'notice' %>">
+      <%= msg %>
+      <span class="close"><a href="#">Remove this</a></span>
+    </div>
+  <% end %>
+
   <h3>Forgotten Your Password?</h3>
 
   <%= form_for @user, as: :user, url: password_path do |f| %>
