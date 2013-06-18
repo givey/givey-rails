@@ -14,11 +14,11 @@ module GiveyRails
     # POST /sign_in
     def create
       if set_password_token(params[:me][:email], params[:me][:password])
-        #render json: ["1"].to_json and return if modal?
+        redirect_to_referrer
+        flash[:notice] = "Signed in successfully"
       else
-        #render json: ["0"].to_json and return if modal?
+        redirect_to new_session_path, error: "Sorry, email and password did not match."
       end
-      redirect_to_referrer
     end
 
     # GET /sign_in/facebook
