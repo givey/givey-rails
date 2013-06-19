@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.13"
-  s.add_dependency "givey_ruby", "0.0.5"
+  s.add_dependency "givey_ruby", "0.0.6"
   s.add_dependency "strong_parameters"
   s.add_dependency "eu_central_bank"
   s.add_dependency "RedCloth"
