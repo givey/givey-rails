@@ -32,6 +32,10 @@ module GiveyRails
       Money.new(@charity_donations_total).cents / 100
     end
 
+    def percentage_target
+      ((charity_donations_total_display || 0) / (fundraising_target || 0)) * 100
+    end
+
     # default currency
     def currency
       @currency.blank? ? 'GBP' : @currency
