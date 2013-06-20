@@ -9,12 +9,6 @@ module GiveyRails
     it_behaves_like "a givey_rails model with attr_accessors"
 
     it "should have all the correct accessors" do
-      user_hash.keys.each do |method_from_json_key|
-        User.new.should respond_to(method_from_json_key)
-      end
-    end
-
-    it "should have all the correct accessors" do
       me_hash.keys.each do |method_from_json_key|
         User.new.should respond_to(method_from_json_key)
       end
