@@ -33,7 +33,11 @@ module GiveyRails
     end
 
     def percentage_target
-      ((charity_donations_total_display || 0) / (fundraising_target || 0)) * 100
+      if fundraising_target > 0
+        ((charity_donations_total_display || 0) / fundraising_target) * 100
+      else
+        0
+      end
     end
 
     # default currency
