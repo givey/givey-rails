@@ -37,6 +37,7 @@ module GiveyRails
       :website_url,
       :facebook_uid,
       :facebook_token,
+      :channels,
       :followees,
       :followee_count,
       :followee_ids,

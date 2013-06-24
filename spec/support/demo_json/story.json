@@ -27,9 +27,9 @@
   "canonical_url" : "https://www.givey.com/nick1/MTM2NDMxMDM4MXJ5ajQ",
   "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-GBP200-amt to [\"(charity).Action For Kids\":http://givey.com/AFK]",
   "donation_images_textile" : [
-      "!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
+      "!(user avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
       ,
-      "!(charity avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg!"
+      "!(charity avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg!"
       
     ],
   "charity" : {

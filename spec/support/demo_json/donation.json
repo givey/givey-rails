@@ -15,11 +15,11 @@
   "canonical_url" : "https://www.givey.com/nick1/MTM2NDMxMDM4M0NUSDU",
   "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-gbp1000-amt to [\"(charity).No Horses for Courses Campaign\":http://givey.com/RSPCA1], matched by [\"(business).Test Business\":http://givey.com/TESTBUSINESS]",
   "donation_images_textile" : [
-      "!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
+      "!(user avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
       ,
-      "!(charity avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg!"
+      "!(charity avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg!"
       ,
-      "!(business avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_64,w_64/default.png!"
+      "!(business avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png!"
       
     ],
   "charity" : {

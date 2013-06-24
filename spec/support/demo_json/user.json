@@ -19,12 +19,21 @@
   "sex" : "male",
   "occupation" : "",
   "website_url" : "",
+  "channels" : [
+      { "channel" : {
+        "id" : "51c4a48d56c02c4b1d000001",
+        "name" : "Nick&#x27;s fundraiser page",
+        "description" : "This is my very personal message",
+        "givey_tag" : "NICKFR"
+      }}
+      
+  ],
   "followees" : [
       {"followee" : {
         "id" : "4fd857343314140b69000004",
-        "first_name" : null,
-        "last_name" : null,
-        "short_name" : "NICK6",
+        "first_name" : "Jabeth",
+        "last_name" : "Jubbet",
+        "short_name" : "Jabeth",
         "givey_tag" : "NICK6",
         "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png"
       }}
@@ -70,37 +79,17 @@
       
   ],
   "selected_charity" : {
-  "id" : "4fe84d813314140f3700174a",
-  "name" : "KIDS",
-  "givey_tag" : "KIDS1",
-  "info_description" : "KIDS&#x27; mission is to make the world a more welcoming place for disabled children, young people and their families.  We work with them to empower them to change their society, and we work for them, in the wider society, to change attitudes to disability.  Our vision of a better world we can create together is one in which all disabled children and young people realise their potential and feel part of a community that supports them and their families. (like &quot;Emilia&quot;:http://givey.com/EMILIA)",
-  "description" : "KIDS&#x27; mission is to make the world a more welcoming place for disabled children, young people and their families.  We work with them to empower them to change their society, and we work for them, in the wider society, to change attitudes to disability.  Our vision of a better world we can create together is one in which all disabled children and young people realise their potential and feel part of a community that supports them and their families. (like &quot;Emilia&quot;:http://givey.com/EMILIA)",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "id" : "4fe84d5b3314140f37000013",
+  "name" : "Action For Kids",
+  "givey_tag" : "AFK",
+  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
   "node_type" : "charity"
 }
 ,
-  "selected_channel" : {
-  "id" : "510656b656c02ce9df000001",
-  "name" : "No Horses for Courses Campaign",
-  "givey_tag" : "RSPCA1",
-  "description" : "Help the horses",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
-  "charity" : {
-  "id" : "4fe84d5b3314140f37000002",
-  "name" : "RSPCA",
-  "givey_tag" : "RSPCA",
-  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Dangerous1hashtag.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
-  "node_type" : "charity"
-}
-,
-  "node_type" : "channel"
-}
-,
+  "selected_channel" : null,
   "business" : {
   "id" : "512cc91c56c02c77f1000002",
   "name" : "Test Business",
