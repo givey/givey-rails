@@ -1,17 +1,17 @@
 {
   "node_type" : "channel",
   "charity" : {
-  "id" : "4fe84d5b3314140f37000002",
-  "name" : "RSPCA",
-  "givey_tag" : "RSPCA",
-  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Dangerous1hashtag.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "id" : "4fe84d5b3314140f37000013",
+  "name" : "Action For Kids",
+  "givey_tag" : "AFK",
+  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
   "node_type" : "charity"
 }
 ,
-  "id" : "510656b656c02ce9df000001",
+  "id" : "51c4a48d56c02c4b1d000001",
   "user" : {
   "id" : "500a99af3314141896000002",
   "short_name" : "Nick",
@@ -23,15 +23,15 @@
   "node_type" : "user"
 }
 ,
-  "name" : "No Horses for Courses Campaign",
-  "givey_tag" : "RSPCA1",
+  "name" : "Nick&#x27;s fundraiser page",
+  "givey_tag" : "NICKFR",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "hero_image_url" : null,
-  "hero_image_small_url" : null,
-  "hero_image_email_url" : null,
-  "charity_donations_total" : 1000,
-  "description" : "Help the horses",
+  "hero_image_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
+  "hero_image_small_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_2500,w_1000/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
+  "hero_image_email_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_1250,w_500/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
+  "charity_donations_total" : 100,
+  "description" : "This is my very personal message",
   "just_giving_link" : null,
   "fundraising_target" : 0
 }
