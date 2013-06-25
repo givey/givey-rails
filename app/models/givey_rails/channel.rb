@@ -34,7 +34,7 @@ module GiveyRails
 
     def percentage_target
       if fundraising_target > 0
-        ((charity_donations_total_display || 0) / fundraising_target) * 100
+        ((charity_donations_total_display.to_f || 0) / fundraising_target.to_f) * 100
       else
         0
       end
