@@ -16,6 +16,10 @@
   "givey_tag" : "RSPCA1",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
+  "hero_image_url" : null,
+  "hero_image_small_url" : null,
+  "hero_image_email_url" : null,
+  "video_link" : null,
   "charity_donations_total" : 1000,
   "description" : "Help the horses",
   "donors" : [
@@ -31,6 +35,15 @@
   ],
   "donor_count" : 1,
   "supporters" : [
+      { "supporter" : {
+        "id" : "500a99af3314141896000002",
+        "first_name" : "Nick",
+        "last_name" : "Reavill",
+        "short_name" : "Nick",
+        "givey_tag" : "NICK1",
+        "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
+      }}
+      
   ],
-  "supporter_count" : 0
+  "supporter_count" : 1
 }

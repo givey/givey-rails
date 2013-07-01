@@ -15,6 +15,7 @@ module GiveyRails
       :hero_image_url,
       :hero_image_small_url,
       :hero_image_email_url,
+      :video_link,
       :description,
       :donors,
       :donor_count,

@@ -1,17 +1,17 @@
 {
   "node_type" : "channel",
   "charity" : {
-  "id" : "4fe84d5b3314140f37000013",
-  "name" : "Action For Kids",
-  "givey_tag" : "AFK",
-  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
-  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
+  "id" : "4fe84d6c3314140f37000d3e",
+  "name" : "Friends of the Lake District",
+  "givey_tag" : "FRIENDSOFT6",
+  "info_description" : "Formed in 1934, Friends of the Lake District is the only organisation working solely to protect and enhance the special qualities of the distinctive and inspirational landscapes of Cumbria and the Lake District. Landscape protection and enhancement is at the heart of what we do. We have successfully campaigned to protect, conserve and enhance the natural beauty of this peerless area of England for 75 years. We hope that you will want to help us continue to do so.",
+  "description" : "Formed in 1934, Friends of the Lake District is the only organisation working solely to protect and enhance the special qualities of the distinctive and inspirational landscapes of Cumbria and the Lake District. Landscape protection and enhancement is at the heart of what we do. We have successfully campaigned to protect, conserve and enhance the natural beauty of this peerless area of England for 75 years. We hope that you will want to help us continue to do so.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
   "node_type" : "charity"
 }
 ,
-  "id" : "51c4a48d56c02c4b1d000001",
+  "id" : "51c8d60856c02c85ba000001",
   "user" : {
   "id" : "500a99af3314141896000002",
   "short_name" : "Nick",
@@ -19,19 +19,31 @@
   "twitter_nickname" : null,
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
   "employee_match_exists" : true,
+  "employee_target_match_exists" : true,
+  "business_confirmed" : true,
   "business_id" : "512cc91c56c02c77f1000002",
+  "business" : {
+  "id" : "512cc91c56c02c77f1000002",
+  "name" : "Test Business",
+  "givey_tag" : "TESTBUSINESS",
+  "about" : "",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "node_type" : "business"
+}
+,
   "node_type" : "user"
 }
 ,
   "name" : "Nick&#x27;s fundraiser page",
-  "givey_tag" : "NICKFR",
+  "givey_tag" : "NICKFUND",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "hero_image_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
-  "hero_image_small_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_2500,w_1000/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
-  "hero_image_email_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_1250,w_500/v1371841701/nr0tlfvqbtollpy7jdjq.jpg",
-  "charity_donations_total" : 100,
-  "description" : "This is my very personal message",
-  "just_giving_link" : null,
-  "fundraising_target" : 0
+  "hero_image_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1372116782/kgwz4iyvygchfwmxvs1z.jpg",
+  "hero_image_small_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_2500,w_1000/v1372116782/kgwz4iyvygchfwmxvs1z.jpg",
+  "hero_image_email_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fit,h_1250,w_500/v1372116782/kgwz4iyvygchfwmxvs1z.jpg",
+  "charity_donations_total" : 1500,
+  "description" : "",
+  "just_giving_link" : "",
+  "fundraising_target" : 800
 }

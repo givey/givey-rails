@@ -16,8 +16,8 @@
   "giftaid" : true,
   "givey_tag" : "NICK1",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "givey_score" : 26,
-  "money_total" : 14500,
+  "givey_score" : 27,
+  "money_total" : 16000,
   "voice_total" : 3200,
   "time_total" : 18000,
   "stuff_total" : 0,
@@ -35,17 +35,17 @@
     "facebook_token" : null,
   "channels" : [
       { "channel" : {
-        "id" : "51c4a48d56c02c4b1d000001",
+        "id" : "51c8d60856c02c85ba000001",
         "name" : "Nick&#x27;s fundraiser page",
-        "description" : "This is my very personal message",
-        "givey_tag" : "NICKFR"
+        "description" : "",
+        "givey_tag" : "NICKFUND"
       }}
       ,
       { "channel" : {
-        "id" : "51c8947256c02c7fbd000001",
-        "name" : "Nick&#x27;s other fundraiser page",
-        "description" : "this is the thing",
-        "givey_tag" : "NICKFUND"
+        "id" : "51c8ed7756c02c759d000003",
+        "name" : "Nick&#x27;s no image fundraiser page",
+        "description" : "",
+        "givey_tag" : "NOIMAGE"
       }}
       
   ],
@@ -103,17 +103,7 @@
       "4fe84d813314140f3700174a"
       
   ],
-  "selected_charity" : {
-  "id" : "4fe84d5b3314140f37000013",
-  "name" : "Action For Kids",
-  "givey_tag" : "AFK",
-  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
-  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
-  "node_type" : "charity"
-}
-,
+  "selected_charity" : {},
   "selected_channel" : {
   "id" : "510656b656c02ce9df000001",
   "name" : "No Horses for Courses Campaign",
