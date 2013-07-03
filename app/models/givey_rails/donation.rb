@@ -39,7 +39,9 @@ module GiveyRails
     end
 
     def display_donated_entity
-      if channel && !channel.user
+      if channel && channel.user
+        channel.charity
+      elsif channel
         channel
       else
         charity
