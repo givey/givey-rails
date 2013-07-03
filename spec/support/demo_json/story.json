@@ -48,8 +48,8 @@
   "id" : "4fe84d5b3314140f37000013",
   "name" : "Action For Kids",
   "givey_tag" : "AFK",
-  "info_description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
-  "description" : "To help physically &amp; mentally disabled children &amp; young people find greater levels of independence/opportunity through appropriate aid and support.",
+  "info_description" : "",
+  "description" : "",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
   "node_type" : "charity"

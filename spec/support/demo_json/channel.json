@@ -11,6 +11,29 @@
   "node_type" : "charity"
 }
 ,
+  "user" : {
+  "id" : "500a99af3314141896000002",
+  "short_name" : "Nick",
+  "givey_tag" : "NICK1",
+  "twitter_nickname" : null,
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
+  "employee_match_exists" : true,
+  "employee_target_match_exists" : true,
+  "business_confirmed" : true,
+  "business_id" : "512cc91c56c02c77f1000002",
+  "business" : {
+  "id" : "512cc91c56c02c77f1000002",
+  "name" : "Test Business",
+  "givey_tag" : "TESTBUSINESS",
+  "about" : "",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "node_type" : "business"
+}
+,
+  "node_type" : "user"
+}
+,
   "id" : "510656b656c02ce9df000001",
   "name" : "No Horses for Courses Campaign",
   "givey_tag" : "RSPCA1",
@@ -35,15 +58,6 @@
   ],
   "donor_count" : 1,
   "supporters" : [
-      { "supporter" : {
-        "id" : "500a99af3314141896000002",
-        "first_name" : "Nick",
-        "last_name" : "Reavill",
-        "short_name" : "Nick",
-        "givey_tag" : "NICK1",
-        "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg"
-      }}
-      
   ],
-  "supporter_count" : 1
+  "supporter_count" : 0
 }

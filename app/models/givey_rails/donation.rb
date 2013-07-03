@@ -38,6 +38,14 @@ module GiveyRails
       channel || charity
     end
 
+    def display_donated_entity
+      if channel && !channel.user
+        channel
+      else
+        charity
+      end
+    end
+
     def display_amount
       Money.new(amount, currency).cents / 100
     end

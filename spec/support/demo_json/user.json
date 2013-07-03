@@ -6,8 +6,8 @@
   "givey_tag" : "NICK1",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
-  "givey_score" : 27,
-  "money_total" : 16000,
+  "givey_score" : 28,
+  "money_total" : 16100,
   "voice_total" : 3200,
   "time_total" : 18000,
   "stuff_total" : 0,
@@ -22,14 +22,14 @@
   "channels" : [
       { "channel" : {
         "id" : "51c8d60856c02c85ba000001",
-        "name" : "Nick&#x27;s fundraiser page",
+        "name" : "Nick's fundraiser page",
         "description" : "",
         "givey_tag" : "NICKFUND"
       }}
       ,
       { "channel" : {
         "id" : "51c8ed7756c02c759d000003",
-        "name" : "Nick&#x27;s no image fundraiser page",
+        "name" : "Nick's no image fundraiser page",
         "description" : "",
         "givey_tag" : "NOIMAGE"
       }}
@@ -85,28 +85,18 @@
       "4fe84d813314140f3700174a"
       
   ],
-  "selected_charity" : null,
-  "selected_channel" : {
-  "id" : "510656b656c02ce9df000001",
-  "name" : "No Horses for Courses Campaign",
-  "givey_tag" : "RSPCA1",
-  "description" : "Help the horses",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1359369923/djzrqy3vg94mxxzpitv1.jpg",
-  "charity" : {
-  "id" : "4fe84d5b3314140f37000002",
-  "name" : "RSPCA",
-  "givey_tag" : "RSPCA",
-  "info_description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "description" : "The charitable objects of the RSPCA are to promote kindness and to prevent or suppress cruelty to animals and to do all such lawful acts as the Society may consider to be conducive or incidental to the attainment of those objects.",
-  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Dangerous1hashtag.jpg",
-  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Dangerous1hashtag.jpg",
+  "selected_charity" : {
+  "id" : "4fe84d5b3314140f37000006",
+  "name" : "Children's Hospices UK",
+  "givey_tag" : "CHUK",
+  "info_description" : "Children's Hospices UK is the charity that gives voice and support to all children's hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children's hospice care and support close to home.",
+  "description" : "Children's Hospices UK is the charity that gives voice and support to all children's hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children's hospice care and support close to home.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
   "node_type" : "charity"
 }
 ,
-  "node_type" : "channel"
-}
-,
+  "selected_channel" : null,
   "business" : {
   "id" : "512cc91c56c02c77f1000002",
   "name" : "Test Business",
