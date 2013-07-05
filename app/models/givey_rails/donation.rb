@@ -52,6 +52,10 @@ module GiveyRails
       Money.new(amount, currency).cents / 100
     end
 
+    def display_combined_amount
+      Money.new(combined_amount, currency).cents / 100
+    end
+
     def display_currency
       Money.new(amount, currency).currency
     end
