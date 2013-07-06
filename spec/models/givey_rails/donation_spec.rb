@@ -57,6 +57,13 @@ module GiveyRails
       end
     end
 
+    describe "#giftaid_display_amount" do
+      it "returns a Money object with a whole amount" do
+        donation = Donation.new(amount: 300, currency: 'GBP')
+        donation.giftaid_display_amount.should == "3.60"
+      end
+    end
+
     describe "#display_currency" do
       it "returns the relevant currency" do
         donation = Donation.new(amount: 100, currency: 'GBP')

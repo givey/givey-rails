@@ -56,6 +56,10 @@ module GiveyRails
       display_amount.to_f * 1.2
     end
 
+    def giftaid_display_amount
+      sprintf("%0.2f", giftaid_amount)
+    end
+
     def display_combined_amount
       Money.new(combined_amount, currency).cents / 100
     end
