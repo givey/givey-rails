@@ -2,9 +2,11 @@ module GiveyRails
 
   class MeController < GiveyRails::ApplicationController
 
+    before_filter :redirect_if_signed_in, only: [:new]
+
     # GET /sign_up
     def new
-      @me = GiveyRails::User.new(email: nil, givey_tag: nil, password: nil, password_confirmation: nil)
+      @me = GiveyRails::User.new
     end
 
     # POST /me

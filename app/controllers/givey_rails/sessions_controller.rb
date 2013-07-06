@@ -63,15 +63,6 @@ module GiveyRails
 
     private
 
-    def redirect_if_signed_in
-      redirect_to root_path if signed_in?
-    end
-
-    def find_and_set_referrer
-      referrer = params[:client_redirect_url] || request.referer
-      set_referrer(referrer)
-    end
-
     def authentication_url(provider)
       [ENV['GIVEY_API_HOST'], GiveyRuby.configuration.api_version, "authorize", provider].join("/") + "?provider_redirect_url=#{return_url(provider)}"
     end
