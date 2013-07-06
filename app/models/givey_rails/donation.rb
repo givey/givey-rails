@@ -104,9 +104,5 @@ module GiveyRails
       "%d hours and %d minutes" % [hh, mm]
     end
 
-    def created_at_human
-      distance_of_time_in_words(created_at, Time.now) 
-    end
-
   end
 end
