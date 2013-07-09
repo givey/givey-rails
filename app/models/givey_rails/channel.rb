@@ -23,7 +23,8 @@ module GiveyRails
       :supporter_count,
       :just_giving_link,
       :fundraising_target,
-      :charity_donations_total
+      :charity_donations_total,
+      :business_invitation_email
     
     def name_and_tag
       "#{givey_tag} - #{name}"
