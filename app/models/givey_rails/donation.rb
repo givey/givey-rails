@@ -67,6 +67,11 @@ module GiveyRails
       Money.new(combined_amount, currency).cents / 100
     end
 
+    # default currency
+    def currency
+      @currency.blank? ? 'GBP' : @currency
+    end
+
     def display_currency
       Money.new(amount, currency).currency
     end
