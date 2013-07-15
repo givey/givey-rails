@@ -6,6 +6,7 @@ module GiveyRails
       :user,
       :donation_type,
       :donation_string_textile,
+      :donation_string_share,
       :donation_images_textile,
       :charity,
       :channel,

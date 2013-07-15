@@ -35,7 +35,7 @@
   "node_type" : "user"
 }
 ,
-  "name" : "Nick's fundraiser page",
+  "name" : "Nick&#x27;s fundraiser page",
   "givey_tag" : "NICKFUND",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/v1346148013/KICK-ASM548Big.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",

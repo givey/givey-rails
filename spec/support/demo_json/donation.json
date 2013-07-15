@@ -26,6 +26,7 @@
   "donation_type" : null,
   "canonical_url" : "https://www.givey.com/nick1/MTM2NDMxMDM4M0NUSDU",
   "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-gbp1000-amt to [\"(charity).No Horses for Courses Campaign\":http://givey.com/RSPCA1], matched by [\"(business).Test Business\":http://givey.com/TESTBUSINESS]",
+  "donation_string_share" : "usr-Nick||nick1-usr -donated- amt-gbp1000-amt to cty-No Horses for Courses Campaign||RSPCA1-cty, which was matched by biz-Test Business||TESTBUSINESS-biz",
   "donation_images_textile" : [
       "!(user avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
       ,

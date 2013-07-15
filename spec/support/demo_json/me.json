@@ -13,7 +13,7 @@
   "ppx_status" : "approved",
   "total_privacy" : false,
   "amount_privacy" : false,
-  "giftaid" : true,
+  "giftaid" : false,
   "givey_tag" : "NICK1",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg",
   "givey_score" : 28,
@@ -36,14 +36,14 @@
   "channels" : [
       { "channel" : {
         "id" : "51c8d60856c02c85ba000001",
-        "name" : "Nick's fundraiser page",
+        "name" : "Nick&#x27;s fundraiser page",
         "description" : "",
         "givey_tag" : "NICKFUND"
       }}
       ,
       { "channel" : {
         "id" : "51c8ed7756c02c759d000003",
-        "name" : "Nick's no image fundraiser page",
+        "name" : "Nick&#x27;s no image fundraiser page",
         "description" : "",
         "givey_tag" : "NOIMAGE"
       }}
@@ -105,10 +105,10 @@
   ],
   "selected_charity" : {
   "id" : "4fe84d5b3314140f37000006",
-  "name" : "Children's Hospices UK",
+  "name" : "Children&#x27;s Hospices UK",
   "givey_tag" : "CHUK",
-  "info_description" : "Children's Hospices UK is the charity that gives voice and support to all children's hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children's hospice care and support close to home.",
-  "description" : "Children's Hospices UK is the charity that gives voice and support to all children's hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children's hospice care and support close to home.",
+  "info_description" : "Children&#x27;s Hospices UK is the charity that gives voice and support to all children&#x27;s hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children&#x27;s hospice care and support close to home.",
+  "description" : "Children&#x27;s Hospices UK is the charity that gives voice and support to all children&#x27;s hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children&#x27;s hospice care and support close to home.",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
   "node_type" : "charity"

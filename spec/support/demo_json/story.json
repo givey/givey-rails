@@ -38,6 +38,7 @@
   "donation_type" : null,
   "canonical_url" : "https://www.givey.com/nick1/MTM2NDMxMDM4MXJ5ajQ",
   "donation_string_textile" : "[\"(user).Nick\":http://givey.com/NICK1] donated amt-GBP200-amt to [\"(charity).Action For Kids\":http://givey.com/AFK]",
+  "donation_string_share" : "usr-Nick||nick1-usr -donated- amt-GBP200-amt to cty-Action For Kids|actionforkids|AFK-cty",
   "donation_images_textile" : [
       "!(user avatar)https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"
       ,
@@ -48,8 +49,7 @@
   "id" : "4fe84d5b3314140f37000013",
   "name" : "Action For Kids",
   "givey_tag" : "AFK",
-  "info_description" : "",
-  "description" : "",
+  "info_description" : "Acorn Overseas Charity for Children is a UK registered charity started in January 2010 by Natasha Whiting, to support underprivileged children abroad. The aim is to provide them with food, shelter and education and to make sure that every penny raised goes directly to them.",
   "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/Action_For_Kids.jpg",
   "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_100,w_100/Action_For_Kids.jpg",
   "node_type" : "charity"
