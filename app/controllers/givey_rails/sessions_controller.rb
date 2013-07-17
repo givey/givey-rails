@@ -17,7 +17,8 @@ module GiveyRails
         redirect_to_referrer
         flash[:notice] = "Signed in successfully"
       else
-        redirect_to new_session_path, error: "Sorry, email and password did not match."
+        flash[:error] = "Sorry, email and password did not match."
+        redirect_to new_session_path 
       end
     end
 
