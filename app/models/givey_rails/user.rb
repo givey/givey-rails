@@ -79,6 +79,10 @@ module GiveyRails
       followee_ids.include?(user.id)
     end
 
+    def name
+      first_name ? first_name : "##{givey_tag}"
+    end
+
     def full_name
       [first_name, last_name].compact.empty? ? short_name : [first_name, last_name].compact.join(" ")
     end

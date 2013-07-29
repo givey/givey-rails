@@ -24,6 +24,27 @@ module GiveyRails
       user.should respond_to(:id)
     end
 
+    it "has a name method" do
+      user = User.new
+      expect(user).to respond_to(:name)
+    end
+
+    describe "#name" do
+      context "with no first_name" do
+        it "returns giveytag" do
+          user = User.new({givey_tag: "tag"})
+          expect(user.name).to eq("#tag")
+        end
+      end
+
+      context "with first name" do
+        it "returns first_name" do
+          user = User.new({givey_tag: "tag", first_name: "Joe"})
+          expect(user.name).to eq("Joe")
+        end
+      end
+    end
+
     it "accepts an id attribute" do
       user  = User.new({"id" => "123049"})
       user.id.should == "123049"
