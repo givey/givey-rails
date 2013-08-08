@@ -81,7 +81,7 @@ module GiveyRails
     end
 
     def name
-      first_name ? first_name : "##{givey_tag}"
+      first_name.blank? ? "##{givey_tag}" : first_name  
     end
 
     def full_name
