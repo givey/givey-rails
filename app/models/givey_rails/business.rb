@@ -33,5 +33,9 @@ module GiveyRails
       ppx_status == 'approved'
     end
 
+    def twitter_greeting
+      twitter_handle ? "@#{twitter_handle}" : name
+    end
+
   end
 end

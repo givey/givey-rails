@@ -16,6 +16,24 @@ module GiveyRails
       end
     end
 
+    describe "#twitter_greeting" do
+      context "with twitter_handle" do
+        it 'uses the @ified twitter_handle' do
+          business = Business.new
+          business.twitter_handle = "givey"
+          expect(business.twitter_greeting).to eq("@givey")
+        end
+      end
+
+      context "without twitter_handle" do
+        it 'defaults to name' do
+          business = Business.new
+          business.name= "givey"
+          expect(business.twitter_greeting).to eq("givey")
+        end
+      end
+    end
+
     describe "#paypal?" do
       context "when approved" do
         business = Business.new(ppx_status: 'approved')
