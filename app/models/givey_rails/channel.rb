@@ -35,6 +35,10 @@ module GiveyRails
       Money.new(@charity_donations_total).cents / 100
     end
 
+    def twitter_greeting
+      name
+    end
+
     def percentage_target
       if fundraising_target > 0
         ((charity_donations_total_display.to_f || 0) / fundraising_target.to_f) * 100

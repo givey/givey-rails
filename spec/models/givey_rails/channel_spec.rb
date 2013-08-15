@@ -38,5 +38,13 @@ module GiveyRails
       end
 
     end
+
+    describe "#twitter_greeting" do
+      it "returns #name" do
+        channel = Channel.new
+        channel.name = "channel"
+        expect(channel.twitter_greeting).to eq("channel")
+      end
+    end
   end
 end
