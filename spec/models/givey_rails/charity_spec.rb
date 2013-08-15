@@ -52,6 +52,24 @@ module GiveyRails
       end
     end
 
+    describe "#twitter_greeting" do
+      context "with handle_twitter" do
+        it "uses @ified handle_twitter" do
+          charity = Charity.new
+          charity.handle_twitter = "charity"
+          expect(charity.twitter_greeting).to eq("@charity")
+        end
+      end
+
+      context "without handle_twitter" do
+        it "defaults to #name" do
+          charity = Charity.new
+          charity.name = "charity"
+          expect(charity.twitter_greeting).to eq("charity")
+        end
+      end
+    end
+
     describe "default currency" do
 
       it "has a default currency of GBP" do

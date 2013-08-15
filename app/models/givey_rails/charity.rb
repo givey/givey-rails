@@ -22,7 +22,8 @@ module GiveyRails
       :givey_tag,
       :info_description,
       :description,
-      :avatar_url,
+      :handle_twitter,
+      :avatar_url, 
       :avatar_thumb_url,
       :hero_image_url,
       :hero_image_small_url,
@@ -42,6 +43,10 @@ module GiveyRails
 
     def name_and_tag
       "#{givey_tag} - #{name}"
+    end
+
+    def twitter_greeting
+      handle_twitter ? "@#{handle_twitter}" : name
     end
 
     def user_donations_total
