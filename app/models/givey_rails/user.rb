@@ -88,6 +88,10 @@ module GiveyRails
       [first_name, last_name].compact.empty? ? short_name : [first_name, last_name].compact.join(" ")
     end
 
+    def twitter_greeting
+      twitter_nickname ? "@#{twitter_nickname}" : name
+    end
+
     # TODO: these '_total' methods don't work
     def money_total
       Money.new(@money_total, currency).cents / 100

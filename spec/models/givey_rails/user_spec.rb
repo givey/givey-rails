@@ -65,6 +65,24 @@ module GiveyRails
       user.addresses.first.should be_kind_of(GiveyRails::Address)
     end
 
+    describe "#twitter_greeting" do
+      context "with twitter_nickname" do
+        it 'returns @ified #twitter_nickname' do
+          user = User.new
+          user.twitter_nickname = "giver"
+          expect(user.twitter_greeting).to eq("@giver")
+        end
+      end
+
+      context "with twitter_nickname" do
+        it 'returns @ified #twitter_nickname' do
+          user = User.new
+          user.first_name = "giver"
+          expect(user.twitter_greeting).to eq("giver")
+        end
+      end
+    end
+
     describe "business_state" do
       
        it "should return 'none' if the user has no business" do
