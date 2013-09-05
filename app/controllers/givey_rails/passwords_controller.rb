@@ -36,9 +36,10 @@ module GiveyRails
         response.each do |attribute, errors|
           @user.errors.add(attribute, errors[0])
         end
-        flash[:notice] = "We could not reset your password:<br/>"
-        flash[:notice] << @user.errors.full_messages.join("<br/>")
-        flash[:notice] << "<br/><br/><a href='#{new_password_path}'>Reset your password again</a>"
+        notice_text = "We could not reset your password:<br/>"
+        notice_text << @user.errors.full_messages.join("<br/>")
+        notice_text << "<br/><br/><a href='#{new_password_path}'>Reset your password again</a>"
+        flash[:notice] = notice_text.html_safe
         render action: :edit
       end
 
