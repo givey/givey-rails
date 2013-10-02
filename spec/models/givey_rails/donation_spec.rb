@@ -53,14 +53,14 @@ module GiveyRails
     describe "#giftaid_amount" do
       it "returns a Money object with a whole amount" do
         donation = Donation.new(amount: 100, currency: 'GBP')
-        donation.giftaid_amount.should == 1.20
+        donation.giftaid_amount.should == 1.25
       end
     end
 
     describe "#giftaid_display_amount" do
       it "returns a Money object with a whole amount" do
-        donation = Donation.new(amount: 300, currency: 'GBP')
-        donation.giftaid_display_amount.should == "3.60"
+        donation = Donation.new(amount: 5000, currency: 'GBP')
+        donation.giftaid_display_amount.should == "62.50" 
       end
     end
 

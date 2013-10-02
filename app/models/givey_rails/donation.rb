@@ -57,7 +57,7 @@ module GiveyRails
     end
 
     def giftaid_amount
-      display_amount.to_f * 1.2
+      display_amount.to_f * 1.25
     end
 
     def giftaid_display_amount
