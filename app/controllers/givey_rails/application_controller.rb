@@ -6,7 +6,8 @@ module GiveyRails
     private
 
     def redirect_if_signed_in
-      redirect_to root_path if signed_in?
+      referer = params[:client_redirect_url] || root_path
+      redirect_to referer if signed_in?
     end
 
     def find_and_set_referrer
