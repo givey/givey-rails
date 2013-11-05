@@ -6,7 +6,7 @@ module GiveyRails
 
     # GET /sign_up
     def new
-      @me = GiveyRails::User.new
+      @me = GiveyRails::User.new(email: params[:email])
     end
 
     # POST /me
