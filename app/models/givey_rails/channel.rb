@@ -25,7 +25,8 @@ module GiveyRails
       :fundraising_target,
       :charity_donations_total,
       :business_invitation_email,
-      :business_invitation_message
+      :business_invitation_message,
+      :active
     
     def name_and_tag
       "#{givey_tag} - #{name}"
