@@ -17,9 +17,13 @@ module GiveyRails
         set_password_token(params[:me][:email], params[:me][:password])
         redirect_to_referrer
       else
+        flash[:notice] = "Please fix the following errors to continue."
         @me = User.new(email: params[:me][:email], givey_tag: params[:me][:givey_tag])
         response.each do |attribute, errors|
           @me.errors.add(attribute, errors[0])
+        end
+        if @me.errors['unique_givey_tag.name']
+          @me.errors.add('givey_tag', @me.errors['unique_givey_tag.name'][0])
         end
         render action: "new"
       end
