@@ -56,8 +56,8 @@ module GiveyRails
       :email_flags,
       :node_type,
       :number
-    
-    
+
+
     # RELATIONSHIPS
 
     def selected_entity
@@ -81,7 +81,7 @@ module GiveyRails
     end
 
     def name
-      first_name.blank? ? "##{givey_tag}" : first_name  
+      first_name.blank? ? "##{givey_tag}" : first_name
     end
 
     def full_name
@@ -104,7 +104,7 @@ module GiveyRails
     def voice_total
       Money.new(@voice_total, currency).cents / 100
     end
-    # TODO END 
+    # TODO END
     def money_total_display
       Money.new(@money_total, currency).cents / 100
     end
@@ -160,7 +160,11 @@ module GiveyRails
       elsif employee_target_match_exists
         "employee_target_match"
       end
-      
+
+    end
+
+    def fundraiser
+      channels.first if channels.count > 0
     end
 
   end
