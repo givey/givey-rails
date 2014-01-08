@@ -164,7 +164,7 @@ module GiveyRails
     end
 
     def fundraiser
-      channels.first if channels && channels.count > 0
+      channel if channel
     end
 
   end
