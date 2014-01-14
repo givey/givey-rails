@@ -14,11 +14,19 @@ module GiveyRails
     # POST /sign_in
     def create
       if set_password_token(params[:me][:email], params[:me][:password])
-        redirect_to_referrer
-        flash[:notice] = "Signed in successfully"
+        unless request.xhr?
+          redirect_to_referrer
+          flash[:notice] = "Signed in successfully"
+        else
+          render json: { redirect: session[:referer] || root_path }
+        end
       else
-        flash[:error] = "Sorry, email and password did not match."
-        redirect_to new_session_path 
+        unless request.xhr?
+          flash[:error] = "Sorry, email and password did not match."
+          redirect_to new_session_path
+        else
+          render json: { error: 'Sorry, email and password did not match.' }
+        end
       end
     end
 
