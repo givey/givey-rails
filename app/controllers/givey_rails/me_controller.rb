@@ -13,10 +13,12 @@ module GiveyRails
     def create
 
       # Parse full_name into first_name and last_name
-      name_parts = params[:me][:full_name].split(' ')
-      params[:me][:first_name] = name_parts[0..-2].join(' ')
-      params[:me][:last_name] = name_parts[-1]
-      params[:me].delete(:full_name)
+      if params[:me][:full_name]
+        name_parts = params[:me][:full_name].split(' ')
+        params[:me][:first_name] = name_parts[0..-2].join(' ')
+        params[:me][:last_name] = name_parts[-1]
+        params[:me].delete(:full_name)
+      end
 
       # Send user data to API
       response = post_token_response("/users", {user: params[:me]})
