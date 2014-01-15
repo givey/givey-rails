@@ -11,21 +11,47 @@ module GiveyRails
 
     # POST /me
     def create
+
+      # Parse full_name into first_name and last_name
+      if params[:me][:full_name]
+        name_parts = params[:me][:full_name].split(' ')
+        params[:me][:first_name] = name_parts[0..-2].join(' ')
+        params[:me][:last_name] = name_parts[-1]
+        params[:me].delete(:full_name)
+      end
+      unless params[:me][:password]
+        params[:me][:password] = SecureRandom.urlsafe_base64(15).tr('lIO0', 'sxyz')
+        params[:me][:password_confirmation] = params[:me][:password]
+      end
+
+      # Send user data to API
       response = post_token_response("/users", {user: params[:me]})
+
+      # Success
       if response["success"]
-        flash[:notice] = 'User was successfully created.'
         set_password_token(params[:me][:email], params[:me][:password])
-        redirect_to_referrer
+        if request.xhr?
+          render json: { success: 1, redirect: session[:referer] || root_path }
+        else
+          flash[:notice] = 'User was successfully created.'
+          redirect_to_referrer
+        end
+
+      # Something went wrong
       else
-        flash[:notice] = "Please fix the following errors to continue."
-        @me = User.new(email: params[:me][:email], givey_tag: params[:me][:givey_tag])
-        response.each do |attribute, errors|
-          @me.errors.add(attribute, errors[0])
+        if request.xhr?
+          render json: { error: response.to_json }
+        else
+          flash[:notice] = "Please fix the following errors to continue."
+          @me = User.new(email: params[:me][:email], givey_tag: params[:me][:givey_tag])
+          response.each do |attribute, errors|
+            @me.errors.add(attribute, errors[0])
+          end
+          if @me.errors['unique_givey_tag.name']
+            @me.errors.add('givey_tag', @me.errors['unique_givey_tag.name'][0])
+          end
+          render action: "new"
         end
-        if @me.errors['unique_givey_tag.name']
-          @me.errors.add('givey_tag', @me.errors['unique_givey_tag.name'][0])
-        end
-        render action: "new"
       end
     end
 
