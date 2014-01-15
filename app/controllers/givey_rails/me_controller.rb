@@ -19,17 +19,21 @@ module GiveyRails
         params[:me][:last_name] = name_parts[-1]
         params[:me].delete(:full_name)
       end
+      unless params[:me][:password]
+        params[:me][:password] = SecureRandom.urlsafe_base64(15).tr('lIO0', 'sxyz')
+        params[:me][:password_confirmation] = params[:me][:password]
+      end
 
       # Send user data to API
       response = post_token_response("/users", {user: params[:me]})
 
       # Success
       if response["success"]
+        set_password_token(params[:me][:email], params[:me][:password])
         if request.xhr?
-          render json: { success: 1 }
+          render json: { success: 1, redirect: session[:referer] || root_path }
         else
           flash[:notice] = 'User was successfully created.'
-          set_password_token(params[:me][:email], params[:me][:password])
           redirect_to_referrer
         end
 
