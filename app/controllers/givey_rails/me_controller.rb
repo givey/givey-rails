@@ -40,7 +40,7 @@ module GiveyRails
       # Something went wrong
       else
         if request.xhr?
-          render json: { error: response.to_json }
+          render json: { errors: response }
         else
           flash[:notice] = "Please fix the following errors to continue."
           @me = User.new(email: params[:me][:email], givey_tag: params[:me][:givey_tag])
