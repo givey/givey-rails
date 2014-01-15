@@ -5,7 +5,7 @@ module GiveyRails
     def new
       # clear the access token
       session[:access_token] = nil
-      #@user                  = GiveyRails::User.new
+      @user                  = GiveyRails::User.new(email: params[:email])
     end
 
     def create
@@ -18,7 +18,7 @@ module GiveyRails
       else
         raise Exceptions::GiveyApiError, response["error"]
       end
-      redirect_to new_password_path
+      redirect_to new_password_path(email: params[:user][:email])
     end
 
     def edit

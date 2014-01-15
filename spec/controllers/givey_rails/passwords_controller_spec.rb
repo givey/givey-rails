@@ -17,14 +17,14 @@ describe GiveyRails::PasswordsController do
     it "should successfully send a reset email" do
       controller.should_receive(:post_token_response).with("/users/password", user: {"email" => 'dave@dive.com', "password_reset_url" => "http://test.host/password/edit"}).and_return("id" => "1234")
       post :create, user: {email: 'dave@dive.com'}
-      response.should redirect_to(new_password_path)
+      response.should redirect_to(new_password_path(email: 'dave@dive.com'))
       flash[:notice].should == "Your password reset instructions have been sent"
     end
 
     it "should fail to send a reset email" do
       controller.should_receive(:post_token_response).with("/users/password", user: {"email" => 'dave@dive.com', "password_reset_url" => "http://test.host/password/edit"}).and_return("message" => "not found")
       post :create, user: {email: 'dave@dive.com'}
-      response.should redirect_to(new_password_path)
+      response.should redirect_to(new_password_path(email: 'dave@dive.com'))
       flash[:notice].should == "We could not find a user with that email address"
     end
 
