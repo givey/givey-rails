@@ -24,6 +24,11 @@ module GiveyRails
         params[:me][:password_confirmation] = params[:me][:password]
       end
 
+      # Add business id
+      if session[:inbound_business]
+        params[:me][:business_id] = session[:inbound_business]
+      end
+
       # Send user data to API
       response = post_token_response("/users", {user: params[:me]})
 
