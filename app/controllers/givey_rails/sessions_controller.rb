@@ -73,7 +73,7 @@ module GiveyRails
     private
 
     def authentication_url(provider)
-      [ENV['GIVEY_API_HOST'], GiveyRuby.configuration.api_version, "authorize", provider].join("/") + "?provider_redirect_url=#{return_url(provider)}"
+      [ENV['GIVEY_API_HOST'], GiveyRuby.configuration.api_version, "authorize", provider].join("/") + "?provider_redirect_url=#{return_url(provider)}&business_id=#{session[:inbound_business]}"
     end
 
     def return_url(provider)
