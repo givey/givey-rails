@@ -20,5 +20,17 @@
   "facebook_page" : null,
   "gocardless_preauthorization_id" : null,
   "gocardless_preauthorization_status" : null,
+  "charities" : [
+    {"charity" : {
+  "id" : "4fe84d5b3314140f37000006",
+  "name" : "Children&#x27;s Hospices UK",
+  "givey_tag" : "CHUK",
+  "info_description" : "Children&#x27;s Hospices UK is the charity that gives voice and support to all children&#x27;s hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children&#x27;s hospice care and support close to home.",
+  "description" : "Children&#x27;s Hospices UK is the charity that gives voice and support to all children&#x27;s hospice services. Our vision is for every child and young person who is not expected to reach adulthood and their family to have access to the highest standards of children&#x27;s hospice care and support close to home.",
+  "avatar_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/default.png",
+  "avatar_thumb_url" : "https://cloudinary-a.akamaihd.net/givey/image/upload/c_fill,h_64,w_64/default.png",
+  "node_type" : "charity"
+    }}
+  ],
   "node_type" : "business"
 }

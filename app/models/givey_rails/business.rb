@@ -10,6 +10,7 @@ module GiveyRails
       :avatar_url,
       :avatar_thumb_url,
       :banner_url,
+      :charities,
       :email_domain,
       :ppx_status,
       :match_total_cache,
