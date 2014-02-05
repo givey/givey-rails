@@ -60,7 +60,7 @@ module GiveyRails
     describe "#giftaid_display_amount" do
       it "returns a Money object with a whole amount" do
         donation = Donation.new(amount: 5000, currency: 'GBP')
-        donation.giftaid_display_amount.should == "62.50" 
+        donation.giftaid_display_amount.should == "62.50"
       end
     end
 
@@ -78,36 +78,38 @@ module GiveyRails
 
     describe "#donation_string_html" do
       it "should render the correct string" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-usd1000-amt to ["(charity).MD Charity":http://givey.com/MDC]') 
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-usd1000-amt to ["(charity).MD Charity":http://givey.com/MDC]')
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated $10 to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
       end
 
       it "should render the correct string - private amount" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated some money to ["(charity).MD Charity":http://givey.com/MDC]') 
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated some money to ["(charity).MD Charity":http://givey.com/MDC]')
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated some money to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
       end
 
       it "should render the correct string - time donation" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated time-3720-time to ["(charity).MD Charity":http://givey.com/MDC]') 
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated time-3720-time to ["(charity).MD Charity":http://givey.com/MDC]')
         donation.donation_string_html.should == '<a href="http://givey.com/JBMD" class="user">Joby</a> donated 1 hours and 2 minutes to <a href="http://givey.com/MDC" class="charity">MD Charity</a>'
       end
     end
 
     describe "#donation_string_plain" do
       it "should render the correct string" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-usd1000-amt to ["(charity).MD Charity":http://givey.com/MDC]') 
+        pending "Comes direct from the API now"
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated amt-usd1000-amt to ["(charity).MD Charity":http://givey.com/MDC]')
         donation.donation_string_plain.should == '#JBMD donated $10 to #MDC'
       end
 
       it "should render the correct string - time donation" do
-        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated time-3720-time to ["(charity).MD Charity":http://givey.com/MDC]') 
+        pending "Comes direct from the API now"
+        donation = Donation.new(donation_string_textile: '["(user).Joby":http://givey.com/JBMD] donated time-3720-time to ["(charity).MD Charity":http://givey.com/MDC]')
         donation.donation_string_plain.should == '#JBMD donated 1 hours and 2 minutes to #MDC'
       end
     end
 
     describe "#donation_images_html" do
       it "should render the correct string" do
-        donation = Donation.new(donation_images_textile: ["!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"]) 
+        donation = Donation.new(donation_images_textile: ["!(user avatar)https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg!"])
         donation.donation_images_html.should == '<div class="user avatar"><img src="https://d3jpl91pxevbkh.cloudfront.net/givey/image/upload/c_fill,h_100,w_100/v1346148013/KICK-ASM548Big.jpg" class="user avatar" alt="" /></div>'
       end
 

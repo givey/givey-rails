@@ -7,6 +7,7 @@ module GiveyRails
       :donation_type,
       :donation_string_textile,
       :donation_string_share,
+      :donation_string_plain_text,
       :donation_images_textile,
       :charity,
       :channel,
@@ -81,8 +82,9 @@ module GiveyRails
       RedCloth.new(replaced_str, [:lite_mode]).to_html
     end
 
+    # DEPRECATED: Please use donation_string_plain_text
     def donation_string_plain
-      replaced_str.gsub(/\[[^\]]+:http:\/\/givey.com\/(\w+)\]/){|m| "##{$1}" }
+      donation_string_plain_text
     end
 
     def replaced_str
@@ -104,7 +106,7 @@ module GiveyRails
         css_classes = s.match(/\((.+)\)/)[1]
         "div(#{css_classes}). " + s
       end.join("\n\n")
-      RedCloth.new(full_string).to_html  
+      RedCloth.new(full_string).to_html
     end
 
     def time_donation_format(seconds)
