@@ -3,7 +3,13 @@ module GiveyRails
     include GiveyRails::ControllerHelpers
     layout 'application'
 
+    helper_method :meta_data
+
     private
+
+    def meta_data
+      {}
+    end
 
     def redirect_if_signed_in
       referer = params[:client_redirect_url] || root_path
