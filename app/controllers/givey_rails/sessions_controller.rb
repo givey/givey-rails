@@ -67,7 +67,11 @@ module GiveyRails
     # DELETE / GET /sign_out
     def destroy
       token_sign_out
-      redirect_to root_path
+      if ENV['GIVEY_CONNECT_HOST']
+        redirect_to "#{ENV['GIVEY_CONNECT_HOST']}/sign_out"
+      else
+        redirect_to root_path
+      end
     end
 
     private

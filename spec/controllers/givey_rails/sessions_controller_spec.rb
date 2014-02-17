@@ -112,13 +112,37 @@ describe GiveyRails::SessionsController do
 
   describe "GET / DELETE /sign_out" do
 
-    it "should successfully logout a user" do
-      session[:user_id]       = '1234'
-      session[:access_token]  = '0987'
-      controller.access_token.stub(:get).with("/v2/oauth/revoke")
-      get :destroy
-      response.should redirect_to(root_path)
-      session[:user_id].should be_nil
+    context "givey connect host" do
+
+      before do
+        ENV['GIVEY_CONNECT_HOST'] = "https://connect.givey.com"
+      end
+      after do
+        ENV.delete('GIVEY_CONNECT_HOST')
+      end
+
+      it "should successfully logout a user" do
+        session[:user_id]       = '1234'
+        session[:access_token]  = '0987'
+        controller.access_token.stub(:get).with("/v2/oauth/revoke")
+        get :destroy
+        response.should redirect_to("#{ENV['GIVEY_CONNECT_HOST']}/sign_out")
+        session[:user_id].should be_nil
+      end
+
+    end
+
+    context "no givey connect host" do
+
+      it "should successfully logout a user" do
+        session[:user_id]       = '1234'
+        session[:access_token]  = '0987'
+        controller.access_token.stub(:get).with("/v2/oauth/revoke")
+        get :destroy
+        response.should redirect_to(root_path)
+        session[:user_id].should be_nil
+      end
+
     end
 
   end
