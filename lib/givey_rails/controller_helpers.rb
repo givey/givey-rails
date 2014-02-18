@@ -27,7 +27,7 @@ module GiveyRails
     end
 
     def check_user_signed_in
-      redirect_to new_session_path and return unless signed_in?
+      redirect_to '/' and return unless signed_in?
     end
 
     def current_givey_user

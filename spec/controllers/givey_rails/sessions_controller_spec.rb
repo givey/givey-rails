@@ -13,9 +13,15 @@ describe GiveyRails::SessionsController do
     end
 
     context "with client_redirect_url parameter" do
+      let(:connect_path) { 'https://connect.givey.com' }
+      let(:client_redirect_url) { "/an_url" }
+      before do
+        controller.stub(:connect_path).and_return(connect_path)
+      end
       it "updates the session referer" do
-        get :new, client_redirect_url: "/an_url"
-        session[:referrer].should == "/an_url"
+        get :new, client_redirect_url: client_redirect_url
+        expected_url = "http://#{request.host}#{client_redirect_url}"
+        expect(response).to redirect_to("#{connect_path}?redirect_url=#{URI.escape(expected_url)}")
       end
     end
 

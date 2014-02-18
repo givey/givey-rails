@@ -18,7 +18,7 @@ describe HomeController do
     it "checks if a user is signed in and redirects if not" do
       controller.stub(:signed_in?).and_return(false)
       get :protected
-      response.should redirect_to("/sign_in")
+      response.should redirect_to("/")
     end
 
   end
@@ -58,7 +58,7 @@ describe HomeController do
     end
 
     before do
-      controller.stub(:session).and_return(mock_session) 
+      controller.stub(:session).and_return(mock_session)
       controller.access_token.stub_chain(:get, :body).and_return(invalid_response)
     end
 

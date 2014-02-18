@@ -15,7 +15,7 @@ describe MeController do
     it "redirect if on a me page and not signed_in" do
       controller.stub(:signed_in?).and_return(false)
       get :show
-      response.should redirect_to("/sign_in")
+      response.should redirect_to("/")
     end
 
   end

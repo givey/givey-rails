@@ -9,6 +9,13 @@ module GiveyRails
 
     # GET /sign_in
     def new
+      connect_url = connect_path.dup
+      if params[:client_redirect_url]
+        redirect_url = params[:client_redirect_url]
+        redirect_url = "#{request.scheme}://#{request.host}#{redirect_url}" if redirect_url.index('/') === 0
+        connect_url << "?redirect_url=#{URI.escape(redirect_url)}"
+      end
+      redirect_to connect_url
     end
 
     # POST /sign_in
