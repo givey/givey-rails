@@ -23,7 +23,7 @@ module GiveyRails
     end
 
     def signed_in?
-      !session[:user_id].blank?
+      !session[:user_id].blank? && !session[:access_token].blank?
     end
 
     def check_user_signed_in

@@ -12,8 +12,18 @@ describe ApplicationController do
   describe "signed_in?" do
 
     it "should show that the user is signed in" do
-      application_controller.stub(:session).and_return({user_id: '123456'})
+      application_controller.stub(:session).and_return({user_id: '123456', access_token: 'TOKEN'})
       application_controller.signed_in?.should be_true
+    end
+
+    it "shows user is not signed in because of access_token" do
+      application_controller.stub(:session).and_return({user_id: '123456'})
+      application_controller.signed_in?.should be_false
+    end
+
+    it "shows user is not signed in because of user_id" do
+      application_controller.stub(:session).and_return({access_token: 'TOKEN'})
+      application_controller.signed_in?.should be_false
     end
 
   end
