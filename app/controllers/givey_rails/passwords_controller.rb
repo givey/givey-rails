@@ -4,6 +4,7 @@ module GiveyRails
 
     def new
       # clear the access token
+      redirect_to dashboard_path if signed_in?
       session[:access_token] = nil
       @user                  = GiveyRails::User.new(email: params[:email])
     end
