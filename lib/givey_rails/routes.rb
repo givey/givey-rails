@@ -13,9 +13,6 @@ module ActionDispatch::Routing
       match 'callback_twitter'   => 'givey_rails/sessions#create_twitter', as: :twitter_callback, via: :get
       match 'sign_out'            => 'givey_rails/sessions#destroy', as: :destroy_session, via: [:delete, :get]
 
-      # PASSWORD
-      resource :password, only: [:new, :create, :edit, :update], controller: "givey_rails/passwords"
-
       # ME
       match 'sign_up'             => 'givey_rails/me#new', via: :get
       resource :me, controller: "givey_rails/me", only: [:new, :create] do
