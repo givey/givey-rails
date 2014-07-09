@@ -6,6 +6,7 @@ module GiveyRails
     attr_accessor :id,
       :first_name,
       :last_name,
+      :full_name,
       :email,
       :secondary_email,
       :short_name,
@@ -56,7 +57,6 @@ module GiveyRails
       :email_flags,
       :node_type,
       :number
-
 
     # RELATIONSHIPS
 
