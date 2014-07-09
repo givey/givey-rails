@@ -56,6 +56,7 @@ module GiveyRails
       :business_confirmed,
       :email_flags,
       :node_type,
+      :has_password,
       :number
 
     # RELATIONSHIPS
