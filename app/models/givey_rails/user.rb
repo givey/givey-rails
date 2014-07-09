@@ -57,6 +57,7 @@ module GiveyRails
       :email_flags,
       :node_type,
       :has_password,
+      :signed_in_at,
       :number
 
     # RELATIONSHIPS
