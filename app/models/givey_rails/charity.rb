@@ -20,15 +20,21 @@ module GiveyRails
     attr_accessor :id,
       :name,
       :givey_tag,
+      :missionfish_id,
       :info_description,
       :description,
       :handle_twitter,
-      :avatar_url, 
+      :handle_facebook,
+      :url_website,
+      :avatar_url,
       :avatar_thumb_url,
       :hero_image_url,
       :hero_image_small_url,
       :hero_image_email_url,
       :video_link,
+      :contact_email,
+      :contact_phone,
+      :contact_name,
       :charity_donations_total,
       :time_donation_accepted,
       :stuff_donation_accepted,
@@ -53,7 +59,7 @@ module GiveyRails
       Money.new(@user_donations_total).cents / 100
     end
 
-    def charity_donations_total_display 
+    def charity_donations_total_display
       Money.new(@charity_donations_total).cents / 100
     end
 
