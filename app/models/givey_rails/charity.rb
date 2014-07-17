@@ -29,6 +29,7 @@ module GiveyRails
       :handle_facebook,
       :url_website,
       :avatar_url,
+      :remote_avatar_url,
       :avatar_thumb_url,
       :hero_image_url,
       :hero_image_small_url,
