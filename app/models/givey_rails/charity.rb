@@ -21,6 +21,8 @@ module GiveyRails
       :name,
       :givey_tag,
       :missionfish_id,
+      :is_visible,
+      :is_enabled,
       :info_description,
       :description,
       :handle_twitter,
