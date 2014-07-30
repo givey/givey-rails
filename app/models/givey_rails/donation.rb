@@ -8,6 +8,7 @@ module GiveyRails
       :donation_string_textile,
       :donation_string_share,
       :donation_string_plain_text,
+      :donation_string_html,
       :donation_images_textile,
       :charity,
       :channel,
@@ -80,6 +81,10 @@ module GiveyRails
 
     def donation_string_html
       RedCloth.new(replaced_str, [:lite_mode]).to_html
+    end
+
+    def donation_string_html_admin
+      donation_string_html.gsub(/["']\/([a-zA-Z0-9]+)["']/, '/admin/g/\1')
     end
 
     # DEPRECATED: Please use donation_string_plain_text
